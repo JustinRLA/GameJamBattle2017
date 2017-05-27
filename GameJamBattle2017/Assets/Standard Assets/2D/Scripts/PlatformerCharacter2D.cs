@@ -159,6 +159,7 @@ namespace UnityStandardAssets._2D
             cableObject.GetComponent<Wire>().isHeld = false;
             isHoldingCable = false;
             cableObject.GetComponent<Renderer>().material.color = Color.red;
+            cableObject.GetComponent<Wire>().DestroyWireParts();
         }
 
         public void GrabCable()
@@ -176,6 +177,7 @@ namespace UnityStandardAssets._2D
             lightObject.GetComponent<Renderer>().material.color = Color.blue;
             cableObject.GetComponent<Wire>().isHeld = false;
             cableObject.GetComponent<Wire>().isPlugged = true;
+            cableObject.GetComponent<Wire>().targetPosition = lightObject.transform.position;
             cableObject.GetComponent<Renderer>().material.color = Color.blue;
             isHoldingCable = false;
             m_MaxSpeed = 10f;  // Reset to standard
