@@ -5,11 +5,19 @@ namespace UnityStandardAssets._2D
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {
-        [SerializeField] private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
-        [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
-        [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
-        [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
-        [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
+        [SerializeField]
+        private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
+        [SerializeField]
+        private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
+        [Range(0, 1)]
+        [SerializeField]
+        private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
+        [SerializeField]
+        private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
+        [SerializeField]
+        private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
+        [SerializeField]
+        private float m_PullbackForce = 0f;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -19,6 +27,14 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+
+
+        public bool isHoldingCable = false; // Is the player holding a cable?
+        public bool isNearCable = false;    // Is the player near a cable?
+        public bool isNearLight = false;    // Is the player near a light?
+        public bool stretched = false;      // Is the player stretching the cord?
+
+
 
         private void Awake()
         {
@@ -46,6 +62,25 @@ namespace UnityStandardAssets._2D
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+
+
+            //Grab Cable  !!!Add button input
+            if (isNearCable)
+            {
+                GrabCable();
+            }
+
+            //Release Cable  !!!Add button input
+            if (isHoldingCable)
+            {
+                ReleaseCable();
+            }
+
+            //Attach Cable !!!Add button input
+            if(isHoldingCable && isNearLight)
+            {
+                AttachCable();
+            }
         }
 
 
@@ -68,13 +103,13 @@ namespace UnityStandardAssets._2D
             if (m_Grounded || m_AirControl)
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
-                move = (crouch ? move*m_CrouchSpeed : move);
+                move = (crouch ? move * m_CrouchSpeed : move);
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                 m_Anim.SetFloat("Speed", Mathf.Abs(move));
 
                 // Move the character
-                m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
+                m_Rigidbody2D.velocity = new Vector2(move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
 
                 // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !m_FacingRight)
@@ -82,7 +117,7 @@ namespace UnityStandardAssets._2D
                     // ... flip the player.
                     Flip();
                 }
-                    // Otherwise if the input is moving the player left and the player is facing right...
+                // Otherwise if the input is moving the player left and the player is facing right...
                 else if (move < 0 && m_FacingRight)
                 {
                     // ... flip the player.
@@ -97,6 +132,13 @@ namespace UnityStandardAssets._2D
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
+
+            //If the player is stretching the cord...
+            if (stretched)
+            {
+                // ...Pull back towards cord !!!modify PullbackForce to represent vector between Player and last anchor point
+                m_Rigidbody2D.AddForce(new Vector2(-m_PullbackForce, 0f));
+            }
         }
 
 
@@ -109,6 +151,61 @@ namespace UnityStandardAssets._2D
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             transform.localScale = theScale;
+        }
+
+        public void ReleaseCable()
+        {
+            // Release the cable
+            // !!!Release Animation
+            // !!!Cable state
+            isHoldingCable = false;
+        }
+
+        public void GrabCable()
+        {
+            //Grab the cable
+            isHoldingCable = true;
+        }
+
+        public void AttachCable()
+        {
+            isHoldingCable = false;
+        }
+
+        public void OnTriggerEnter(Collider col)
+        {
+            //Generator
+            if (col.gameObject.tag == "Generator")
+            {
+                isNearCable = true;
+            }
+
+            //Light
+            else if (col.gameObject.tag == "Light")
+            {
+                isNearLight = true;
+            }
+
+            //Danger
+            else if (col.gameObject.tag == "Danger")
+            {
+                //Take damage
+            }
+        }
+
+        public void OnTriggerExit(Collider col)
+        {
+            //Generator
+            if (col.gameObject.tag == "Generator")
+            {
+                isNearCable = false;
+            }
+
+            //Light
+            else if (col.gameObject.tag == "Light")
+            {
+                isNearLight = false;
+            }
         }
     }
 }
