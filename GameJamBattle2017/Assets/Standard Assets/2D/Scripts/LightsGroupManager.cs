@@ -36,7 +36,7 @@ public class LightsGroupManager : MonoBehaviour {
 
         foreach (var platform in platforms)
         {
-            platform.verticalMove = true;
+            platform.useWaypoint = true;
         }
     }
 
