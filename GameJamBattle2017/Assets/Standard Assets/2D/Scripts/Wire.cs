@@ -86,7 +86,6 @@ namespace UnityStandardAssets._2D
                 _currentWirePart.partEnd = targetPosition;
                 _currentWirePart.isStuck = true;
                 CreateWirePart(hit.collider.gameObject);
-                //Debug.Log(hit.collider.name);
             }
         }
 
@@ -110,7 +109,6 @@ namespace UnityStandardAssets._2D
                 if (cross.z > 0)
                     angle = 360 - angle;
 
-                Debug.Log(angle);
                 if (angle >= 0 && angle < 180)
                 {
                     _wireParts[i].partEnd = _wireParts[i + 1].partEnd;
