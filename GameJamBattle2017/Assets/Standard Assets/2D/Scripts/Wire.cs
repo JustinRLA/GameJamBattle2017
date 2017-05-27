@@ -57,10 +57,17 @@ namespace UnityStandardAssets._2D
             {
                 return;
             }
-
-            HandleObstacles();
-
             StretchEffect();
+        }
+
+        void Update()
+        {
+            if (!isHeld)
+            {
+                return;
+            }
+            HandleObstacles();
+            DetangleWire();
         }
 
         private void HandleObstacles()
@@ -81,6 +88,38 @@ namespace UnityStandardAssets._2D
                 CreateWirePart(hit.collider.gameObject);
                 //Debug.Log(hit.collider.name);
             }
+        }
+
+        private void DetangleWire()
+        {
+            if (_wireParts == null)
+            {
+                return;
+            }
+            for (var i = 0; i < _wireParts.Count; i++)
+            {
+                if(_wireParts[i].isStuck == false)
+                {
+                    continue;
+                }
+                var dir1 = _wireParts[i].partEnd - _wireParts[i].partOrigin;
+                var dir2 = _wireParts[i + 1].partEnd - _wireParts[i + 1].partOrigin;
+                var angle = Vector2.Angle(dir1, dir2);
+                Vector3 cross = Vector3.Cross(dir2, dir1);
+
+                if (cross.z > 0)
+                    angle = 360 - angle;
+
+                Debug.Log(angle);
+                if (angle >= 0 && angle < 180)
+                {
+                    _wireParts[i].partEnd = _wireParts[i + 1].partEnd;
+                    _wireParts[i].isStuck = false;
+                    Destroy(_wireParts[i + 1]);
+                }
+            }
+            //cleaning list 
+            _wireParts.RemoveAll(item => item == null);
         }
 
         private void StretchEffect()
