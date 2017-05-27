@@ -10,6 +10,7 @@ public class WirePart : MonoBehaviour {
     public bool isStuck = false;
     public GameObject objToIgnore;
 
+
     public float partLength
     {
         get

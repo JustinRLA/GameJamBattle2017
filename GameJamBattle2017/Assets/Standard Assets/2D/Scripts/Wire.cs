@@ -85,6 +85,7 @@ namespace UnityStandardAssets._2D
                 targetPosition = hit.collider.transform.position;
                 _currentWirePart.partEnd = targetPosition;
                 _currentWirePart.isStuck = true;
+
                 CreateWirePart(hit.collider.gameObject);
             }
         }
@@ -103,7 +104,7 @@ namespace UnityStandardAssets._2D
                 }
                 var dir1 = _wireParts[i].partEnd - _wireParts[i].partOrigin;
                 var dir2 = _wireParts[i + 1].partEnd - _wireParts[i + 1].partOrigin;
-                var angle = Vector2.Angle(dir1, dir2);
+                var angle = Vector2.Angle(dir2, dir1);
                 Vector3 cross = Vector3.Cross(dir2, dir1);
 
                 if (cross.z > 0)
