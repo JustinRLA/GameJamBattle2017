@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4662425942134534}
   - component: {fileID: 114657571000048884}
   m_Layer: 0
-  m_Name: New Prefab
+  m_Name: LightGroupsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
