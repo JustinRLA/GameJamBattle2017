@@ -128,11 +128,14 @@ namespace UnityStandardAssets._2D
                 var dir2 = _wireParts[i + 1].partEnd - _wireParts[i + 1].partOrigin;
                 var angle = Vector2.Angle(dir2, dir1);
                 Vector3 cross = Vector3.Cross(dir2, dir1);
-
+                
                 if (cross.z > 0)
                     angle = 360 - angle;
 
-                if (angle >= 0 && angle < 180)
+                var isRight = _wireParts[i].partEnd.x > _wireParts[i + 1].partEnd.x;
+                var isUp = _wireParts[i].partEnd.y > _wireParts[i + 1].partEnd.y;
+                Debug.Log(angle);
+                if (angle >= 0 && angle < 90)
                 {
                     _wireParts[i].partEnd = _wireParts[i + 1].partEnd;
                     _wireParts[i].isStuck = false;
