@@ -26,7 +26,7 @@ namespace UnityStandardAssets._2D
         public LayerMask myLayerMask;
 
 
-        public bool isHeld {
+        public bool IsHeld {
             get
             {
                 return _isHeld;
@@ -46,7 +46,7 @@ namespace UnityStandardAssets._2D
             }
         }
 
-        public Vector3 cableOriginPos
+        public Vector3 CableOriginPos
         {
             get
             {
@@ -70,7 +70,7 @@ namespace UnityStandardAssets._2D
         private bool test = false;
         void FixedUpdate()
         {
-            if (!isHeld)
+            if (!IsHeld)
             {
                 return;
             }
@@ -79,13 +79,17 @@ namespace UnityStandardAssets._2D
 
         void Update()
         {
-            if (!isHeld)
+            if (!IsHeld)
             {
                 return;
             }
             HandleObstacles();
             DetangleWire();
         }
+
+
+
+        //Functions
 
         private void HandleObstacles()
         {

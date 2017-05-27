@@ -135,7 +135,7 @@ namespace UnityStandardAssets._2D
             {
                 // ...Pull back towards cable !!!modify PullbackForce to represent vector between Player and last anchor point
                 var pullBackForce = m_PullbackForce;
-                if (cableObject.GetComponent<Wire>().cableOriginPos.x < transform.position.x)
+                if (cableObject.GetComponent<Wire>().CableOriginPos.x < transform.position.x)
                 {
                     pullBackForce = -pullBackForce;
                 }
@@ -161,7 +161,7 @@ namespace UnityStandardAssets._2D
             Debug.Log("Releasing Cable");
             // !!!Release Animation
             // !!!Cable state
-            cableObject.GetComponent<Wire>().isHeld = false;
+            cableObject.GetComponent<Wire>().IsHeld = false;
             isHoldingCable = false;
             cableObject.GetComponent<Renderer>().material.color = Color.red;
             cableObject.GetComponent<Wire>().DestroyWireParts();
@@ -171,7 +171,7 @@ namespace UnityStandardAssets._2D
         {
             //Grab the cable
             Debug.Log("Grabbing Cable");
-            cableObject.GetComponent<Wire>().isHeld = true;
+            cableObject.GetComponent<Wire>().IsHeld = true;
             cableObject.GetComponent<Renderer>().material.color = Color.green;
             isHoldingCable = true;
         }
@@ -180,7 +180,7 @@ namespace UnityStandardAssets._2D
         {
             Debug.Log("Light Activated");
             lightObject.GetComponent<Renderer>().material.color = Color.blue;
-            cableObject.GetComponent<Wire>().isHeld = false;
+            cableObject.GetComponent<Wire>().IsHeld = false;
             cableObject.GetComponent<Wire>().isPlugged = true;
             cableObject.GetComponent<Wire>().targetPosition = lightObject.transform.position;
             cableObject.GetComponent<Renderer>().material.color = Color.blue;
