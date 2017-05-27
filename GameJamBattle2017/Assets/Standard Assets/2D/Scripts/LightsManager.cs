@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LightsManager : MonoBehaviour {
 
     public List<LightBulbe> lights = new List<LightBulbe>();
+    public int nextSceneIndex;
 
     // Use this for initialization
     void Start () {
@@ -27,5 +29,12 @@ public class LightsManager : MonoBehaviour {
             }
         }
         Debug.Log("All are lit!");
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        Debug.Log(SceneManager.sceneCount);
+        if (SceneManager.sceneCountInBuildSettings > nextSceneIndex)
+        {
+            Debug.Log("Next scene");
+            SceneManager.LoadScene(nextSceneIndex);
+        }
     }
 }
