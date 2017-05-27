@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4917065516861328}
   - component: {fileID: 212137583091492618}
   - component: {fileID: 61515817318356750}
+  - component: {fileID: 114414569265531952}
   m_Layer: 0
   m_Name: Light
   m_TagString: Light
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1284234990532578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.56, y: -3.15, z: 0}
+  m_LocalPosition: {x: 17.551245, y: 2.3983152, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -66,6 +67,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.375, y: 1.375}
   m_EdgeRadius: 0
+--- !u!114 &114414569265531952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284234990532578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb4e362cd32a954ea39b5b9c10f3a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  groupManager: {fileID: 0}
 --- !u!212 &212137583091492618
 SpriteRenderer:
   m_ObjectHideFlags: 1

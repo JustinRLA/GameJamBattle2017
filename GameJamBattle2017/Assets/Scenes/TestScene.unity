@@ -1015,6 +1015,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1804541769
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4194214546135950, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.844367
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194214546135950, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.4267478
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194214546135950, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194214546135950, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194214546135950, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194214546135950, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194214546135950, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194214546135950, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9e0a6622cef81bc4b9d4c6dd221555fc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1819989070 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
