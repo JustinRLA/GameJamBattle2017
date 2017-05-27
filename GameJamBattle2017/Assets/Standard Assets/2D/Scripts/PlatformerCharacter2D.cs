@@ -6,7 +6,7 @@ namespace UnityStandardAssets._2D
     public class PlatformerCharacter2D : MonoBehaviour
     {
         [SerializeField]
-        private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
+        public float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
         [SerializeField]
         private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
         [Range(0, 1)]
@@ -33,6 +33,8 @@ namespace UnityStandardAssets._2D
         public bool isNearCable = false;    // Is the player near a cable?
         public bool isNearLight = false;    // Is the player near a light?
         public bool stretched = false;      // Is the player stretching the cord?
+        public GameObject cableObject;      // The cable the player is currently interacting with.
+        public GameObject lightObject;      // The light the player is currently interacting with.
 
 
 
@@ -63,24 +65,19 @@ namespace UnityStandardAssets._2D
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
 
-
-            //Grab Cable  !!!Add button input
-            if (isNearCable)
-            {
+            
+            //Object Interactions
+            //Grab Cable
+            if (Input.GetButtonDown("Select") && isNearCable && !isHoldingCable && cableObject.GetComponent<Wire>().isPlugged == false)
                 GrabCable();
-            }
 
-            //Release Cable  !!!Add button input
-            if (isHoldingCable)
-            {
+            //Release Cable
+            if (Input.GetButtonDown("Release") && isHoldingCable)
                 ReleaseCable();
-            }
 
-            //Attach Cable !!!Add button input
-            if(isHoldingCable && isNearLight)
-            {
+            //Attach Cable to Light
+            if(Input.GetButtonDown("Select") && isHoldingCable && isNearLight)
                 AttachCable();
-            }
         }
 
 
@@ -133,10 +130,10 @@ namespace UnityStandardAssets._2D
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
 
-            //If the player is stretching the cord...
+            //If the player is stretching the cable...
             if (stretched)
             {
-                // ...Pull back towards cord !!!modify PullbackForce to represent vector between Player and last anchor point
+                // ...Pull back towards cable !!!modify PullbackForce to represent vector between Player and last anchor point
                 m_Rigidbody2D.AddForce(new Vector2(-m_PullbackForce, 0f));
             }
         }
@@ -156,19 +153,30 @@ namespace UnityStandardAssets._2D
         public void ReleaseCable()
         {
             // Release the cable
+            Debug.Log("Releasing Cable");
             // !!!Release Animation
             // !!!Cable state
+            cableObject.GetComponent<Wire>().isHeld = false;
             isHoldingCable = false;
+            cableObject.GetComponent<Renderer>().material.color = Color.red;
         }
 
         public void GrabCable()
         {
             //Grab the cable
+            Debug.Log("Grabbing Cable");
+            cableObject.GetComponent<Wire>().isHeld = true;
+            cableObject.GetComponent<Renderer>().material.color = Color.green;
             isHoldingCable = true;
         }
 
         public void AttachCable()
         {
+            Debug.Log("Light Activated");
+            lightObject.GetComponent<Renderer>().material.color = Color.blue;
+            cableObject.GetComponent<Wire>().isHeld = false;
+            cableObject.GetComponent<Wire>().isPlugged = true;
+            cableObject.GetComponent<Renderer>().material.color = Color.blue;
             isHoldingCable = false;
         }
 
@@ -177,20 +185,26 @@ namespace UnityStandardAssets._2D
             //Generator
             if (col.gameObject.tag == "Generator")
             {
-                Debug.Log("Generator");
+                //Debug.Log("Generator");
                 isNearCable = true;
+                if (!isHoldingCable)
+                {
+                    cableObject = col.gameObject;
+                }
             }
 
             //Light
             else if (col.gameObject.tag == "Light")
             {
                 isNearLight = true;
+                lightObject = col.gameObject;
             }
 
             //Danger
             else if (col.gameObject.tag == "Danger")
             {
-                //Take damage
+                //!!! Damage animation
+                ReleaseCable();
             }
         }
 
@@ -210,3 +224,4 @@ namespace UnityStandardAssets._2D
         }
     }
 }
+
