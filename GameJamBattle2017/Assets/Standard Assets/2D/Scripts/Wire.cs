@@ -44,7 +44,24 @@ namespace UnityStandardAssets._2D
 
                 _isHeld = !_isHeld;
             }
-        }    // The cable is being carried by the player
+        }
+
+        public Vector3 cableOriginPos
+        {
+            get
+            {
+                if(_wireParts != null)
+                {
+                    return _wireParts[_wireParts.Count - 1].partOrigin;
+                }
+                else
+                {
+                    return Vector3.zero;
+                }
+            }
+        }
+
+        // The cable is being carried by the player
         public bool isPlugged = false;  // The cable is attached to a light
 
         private List<WirePart> _wireParts;

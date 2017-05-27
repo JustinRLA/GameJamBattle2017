@@ -134,7 +134,12 @@ namespace UnityStandardAssets._2D
             if (stretched)
             {
                 // ...Pull back towards cable !!!modify PullbackForce to represent vector between Player and last anchor point
-                m_Rigidbody2D.AddForce(new Vector2(-m_PullbackForce, 0f));
+                var pullBackForce = m_PullbackForce;
+                if (cableObject.GetComponent<Wire>().cableOriginPos.x < transform.position.x)
+                {
+                    pullBackForce = -pullBackForce;
+                }
+                m_Rigidbody2D.AddForce(new Vector2(pullBackForce, 0f));
             }
         }
 
