@@ -13,22 +13,29 @@ public class Wire : MonoBehaviour {
 
     Vector2 rayDirection;
 
-    void Update()
+    void FixedUpdate()
     {
-        hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), new Vector2(Avatar.transform.position.x, Avatar.transform.position.y), Vector2.Distance(new Vector2(transform.position.x, transform.position.y), new Vector2(Avatar.transform.position.x, Avatar.transform.position.y)));
-        Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), new Vector2(Avatar.transform.position.x, Avatar.transform.position.y), Color.red);
+        Vector2 lineDirection = (Avatar.transform.position - this.transform.position);
+        float lineDistance = Vector2.Distance(Avatar.transform.position, this.transform.position);
+
+        //Debug.Log(new Vector2(this.transform.position.x, this.transform.position.y));
+        //Debug.Log(new Vector2(Avatar.transform.position.x, Avatar.transform.position.y));
+        hit = Physics2D.Raycast(new Vector2(this.transform.position.x, this.transform.position.y), lineDirection, lineDistance);
+        Debug.DrawRay(new Vector2(this.transform.position.x, this.transform.position.y), lineDirection, Color.blue);
         if (hit.collider != null && hit.collider.name != null)
         {
             Debug.Log(hit.collider.name);
         }
-        /*Ray ray = new Ray(transform.position, Avatar.transform.position);
+        //Ray ray = new Ray(transform.position, Avatar.transform.position);
+        
+        /*
         RaycastHit hit3D;
         if (GetComponent<Collider>().Raycast(ray, out hit3D,100f))
         {
             Debug.Log(hit3D.collider.name);
         }*/
     }
-    
+
     static void CreateLineMaterial()
     {
         if (!lineMaterial)
@@ -67,7 +74,7 @@ public class Wire : MonoBehaviour {
         //Draw X axis
         GL.Color(Color.black);
         GL.Vertex3(Avatar.transform.position.x, Avatar.transform.position.y, Avatar.transform.position.z);
-        GL.Vertex3(transform.position.x, transform.position.y, transform.position.z);
+        GL.Vertex3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
         GL.End();
         GL.PopMatrix();
     }
