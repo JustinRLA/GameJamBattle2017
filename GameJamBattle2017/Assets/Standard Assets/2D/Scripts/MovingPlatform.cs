@@ -12,10 +12,17 @@ public class MovingPlatform : MonoBehaviour {
     public float verticalSpeed = 1.0F;
     public int verticalLength = 1;
 
+    public bool useWaypoint = false;
+    public float waypointSpeed = 1.0F;
+
     public bool isBird = false;
     public Animator animator;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-
+    public Transform waypoint;
+    private Transform startPos;
+    private float lerpRate = 0.01f;
+    private float lerpPercent = 0.0f;
+    private bool waypointBack = false;
 
     // Use this for initialization
     void Start ()
@@ -24,7 +31,9 @@ public class MovingPlatform : MonoBehaviour {
         {
             animator = GetComponent<Animator>();
         }
-	}
+        startPos = transform;
+
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -35,17 +44,41 @@ public class MovingPlatform : MonoBehaviour {
         else if (horizontalMove)
         {
             transform.position = new Vector3(Mathf.PingPong(horizontalSpeed*Time.time, horizontalLength), transform.position.y, transform.position.z);
-            Debug.Log("Speed*Time " + horizontalSpeed * Time.time);
-            Debug.Log("PingPong " + Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength));
+            //Debug.Log("Speed*Time " + horizontalSpeed * Time.time);
+            //Debug.Log("PingPong " + Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength));
             if (Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength) >= horizontalLength || Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength) <= 0)
             {
                 Flip();
-                Debug.Log("Flip");
+                //Debug.Log("Flip");
             }
         }
         else if (verticalMove)
         {
-            transform.position = new Vector3(transform.position.x, Mathf.PingPong(verticalSpeed*Time.time, verticalLength), transform.position.z);
+            transform.position = new Vector3(transform.position.x, Mathf.PingPong(verticalSpeed*Time.time, verticalLength), transform.position.y);
+        }
+        else if (useWaypoint && waypoint != null)
+        {
+            if (waypointBack)
+            {
+                lerpPercent -= lerpRate;
+                if(lerpPercent <= 0.0f)
+                {
+                    lerpPercent = 0.0f;
+                    waypointBack = false;
+                }
+            }
+            else
+            {
+                lerpPercent += lerpRate;
+                if (lerpPercent >= 1.0f)
+                {
+                    lerpPercent = 1.0f;
+                    waypointBack = true;
+                }
+            }
+
+
+            transform.position = Vector3.Lerp(startPos.position, waypoint.position, lerpPercent);
         }
         if (isBird)
         {
