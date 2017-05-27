@@ -178,6 +178,8 @@ namespace UnityStandardAssets._2D
             cableObject.GetComponent<Wire>().isPlugged = true;
             cableObject.GetComponent<Renderer>().material.color = Color.blue;
             isHoldingCable = false;
+            m_MaxSpeed = 10f;  // Reset to standard
+            stretched = false; // Reset to standard
         }
 
         public void OnTriggerEnter2D(Collider2D col)

@@ -61,17 +61,20 @@ namespace UnityStandardAssets._2D
             //Stretch effects
             if (cordLength >= cordMaxLength && isHeld)
             {
+                //Debug.Log(this.name + "too far");
                 Avatar.GetComponent<PlatformerCharacter2D>().ReleaseCable();    // Cable gets cut from player
                 Avatar.GetComponent<PlatformerCharacter2D>().m_MaxSpeed = 10f;  // Reset to standard
                 Avatar.GetComponent<PlatformerCharacter2D>().stretched = false; // Reset to standard
             }
             else if (cordLength >= cordStretchThreshold && isHeld)
             {
+                //Debug.Log(this.name + "stretch");
                 Avatar.GetComponent<PlatformerCharacter2D>().m_MaxSpeed = 3f;   // Limit player speed
                 Avatar.GetComponent<PlatformerCharacter2D>().stretched = true;  // Activate pullback effect
             }
-            else
+            else if (isHeld)
             {
+                //Debug.Log(this.name + "isHeld");
                 Avatar.GetComponent<PlatformerCharacter2D>().m_MaxSpeed = 10f;  // Reset to standard
                 Avatar.GetComponent<PlatformerCharacter2D>().stretched = false; // Reset to standard
             }
