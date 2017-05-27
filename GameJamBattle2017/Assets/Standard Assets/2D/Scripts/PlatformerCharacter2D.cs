@@ -179,7 +179,7 @@ namespace UnityStandardAssets._2D
         public void AttachCable()
         {
             Debug.Log("Light Activated");
-            lightObject.GetComponent<Renderer>().material.color = Color.blue;
+            lightObject.GetComponent<LightBulbe>().plugged = true;
             cableObject.GetComponent<Wire>().IsHeld = false;
             cableObject.GetComponent<Wire>().isPlugged = true;
             cableObject.GetComponent<Wire>().targetPosition = lightObject.transform.position;

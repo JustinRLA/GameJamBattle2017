@@ -33,16 +33,17 @@ namespace UnityStandardAssets._2D
             }
             set
             {
+
+                _isHeld = value;
+
                 if (_wireParts == null)
                 {
                     _wireParts = new List<WirePart>();
                 }
-                if (_isHeld == false)
+                if (_isHeld == true)
                 {
                     CreateWirePart();
                 }
-
-                _isHeld = !_isHeld;
             }
         }
 
