@@ -193,6 +193,11 @@ namespace UnityStandardAssets._2D
             _wireParts[_wireParts.Count - 1].objToIgnore = objToIgnore;
         }
 
+        public void PlugCableToLight(LightBulbe light)
+        {
+            _wireParts[_wireParts.Count - 1].LightPluggedTo = light;
+        }
+
         public void DestroyWireParts()
         {
             foreach(var wirePart in _wireParts)

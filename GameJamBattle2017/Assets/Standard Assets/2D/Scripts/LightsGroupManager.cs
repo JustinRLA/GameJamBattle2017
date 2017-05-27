@@ -5,6 +5,7 @@ using UnityEngine;
 public class LightsGroupManager : MonoBehaviour {
 
     public List<LightBulbe> lights;
+    public List<MovingPlatform> platforms;
 
     // Use this for initialization
     void Start()
@@ -32,6 +33,11 @@ public class LightsGroupManager : MonoBehaviour {
         }
         Debug.Log("All group is lit!");
         allLit = true;
+
+        foreach (var platform in platforms)
+        {
+            platform.verticalMove = true;
+        }
     }
 
     public bool allLit = false;

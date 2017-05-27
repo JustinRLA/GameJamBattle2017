@@ -183,6 +183,7 @@ namespace UnityStandardAssets._2D
         {
             Debug.Log("Light Activated");
             lightObject.GetComponent<LightBulbe>().plugged = true;
+            cableObject.GetComponent<Wire>().PlugCableToLight(lightObject.GetComponent<LightBulbe>());
             cableObject.GetComponent<Wire>().IsHeld = false;
             cableObject.GetComponent<Wire>().isPlugged = true;
             cableObject.GetComponent<Wire>().targetPosition = lightObject.transform.position;

@@ -9,7 +9,7 @@ public class WirePart : MonoBehaviour {
     public bool displayWire = false;
     public bool isStuck = false;
     public GameObject objToIgnore;
-
+    public LightBulbe LightPluggedTo;
 
     public float partLength
     {
@@ -60,7 +60,14 @@ public class WirePart : MonoBehaviour {
             GL.Begin(GL.LINES);
             //Draw X axis
             GL.Color(Color.black);
-            GL.Vertex3(partEnd.x, partEnd.y, partEnd.z);
+            if(LightPluggedTo != null)
+            {
+                GL.Vertex3(LightPluggedTo.transform.position.x, LightPluggedTo.transform.position.y, LightPluggedTo.transform.position.z);
+            }
+            else
+            {
+                GL.Vertex3(partEnd.x, partEnd.y, partEnd.z);
+            }
             GL.Vertex3(partOrigin.x, partOrigin.y, partOrigin.z);
             GL.End();
             GL.PopMatrix();
