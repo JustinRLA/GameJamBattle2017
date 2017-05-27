@@ -847,6 +847,70 @@ MonoBehaviour:
   lookAheadFactor: 3
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
+--- !u!1001 &1682798261
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4554323002751174, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.322039
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554323002751174, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.320742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554323002751174, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554323002751174, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554323002751174, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554323002751174, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554323002751174, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554323002751174, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c1218c65be918ba4daf3644e36026a06, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1682798262 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1258932929002598, guid: c1218c65be918ba4daf3644e36026a06,
+    type: 2}
+  m_PrefabInternal: {fileID: 1682798261}
+--- !u!114 &1682798263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682798262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f0adf10d5dfac48b2df73e74fe71c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalMove: 0
+  horizontalSpeed: 1
+  horizontalLength: 1
+  verticalMove: 0
+  verticalSpeed: 1
+  verticalLength: 1
 --- !u!1001 &1779667878
 Prefab:
   m_ObjectHideFlags: 0
