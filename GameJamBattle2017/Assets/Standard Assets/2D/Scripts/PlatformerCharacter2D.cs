@@ -35,6 +35,7 @@ namespace UnityStandardAssets._2D
         public bool stretched = false;      // Is the player stretching the cord?
         public GameObject cableObject;      // The cable the player is currently interacting with.
         public GameObject lightObject;      // The light the player is currently interacting with.
+        public Animator animator;
 
 
 
@@ -45,6 +46,7 @@ namespace UnityStandardAssets._2D
             m_CeilingCheck = transform.Find("CeilingCheck");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            animator = GetComponent<Animator>();
         }
 
 
@@ -160,6 +162,7 @@ namespace UnityStandardAssets._2D
             // Release the cable
             Debug.Log("Releasing Cable");
             // !!!Release Animation
+            animator.SetTrigger("Startled");
             // !!!Cable state
             cableObject.GetComponent<Wire>().IsHeld = false;
             isHoldingCable = false;

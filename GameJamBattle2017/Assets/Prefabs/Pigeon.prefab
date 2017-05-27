@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4554323002751174}
   - component: {fileID: 212512656816844222}
   - component: {fileID: 95310331284303938}
+  - component: {fileID: 114964929690955826}
   m_Layer: 0
   m_Name: Pigeon
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1258932929002598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.322039, y: 5.320742, z: 0}
+  m_LocalPosition: {x: 0.27, y: 2.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,6 +59,25 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114964929690955826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258932929002598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f0adf10d5dfac48b2df73e74fe71c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalMove: 1
+  horizontalSpeed: 2
+  horizontalLength: 8
+  verticalMove: 0
+  verticalSpeed: 1
+  verticalLength: 1
+  isBird: 1
+  animator: {fileID: 95310331284303938}
 --- !u!212 &212512656816844222
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -92,7 +112,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 31f85e467899289439e989dd088205df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.48, y: 0.44}
