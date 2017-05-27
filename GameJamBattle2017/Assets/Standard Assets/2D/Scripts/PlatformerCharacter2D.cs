@@ -17,7 +17,7 @@ namespace UnityStandardAssets._2D
         [SerializeField]
         private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
         [SerializeField]
-        private float m_PullbackForce = 0f;
+        private float m_PullbackForce = 0f; 
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -172,11 +172,12 @@ namespace UnityStandardAssets._2D
             isHoldingCable = false;
         }
 
-        public void OnTriggerEnter(Collider col)
+        public void OnTriggerEnter2D(Collider2D col)
         {
             //Generator
             if (col.gameObject.tag == "Generator")
             {
+                Debug.Log("Generator");
                 isNearCable = true;
             }
 
@@ -193,7 +194,7 @@ namespace UnityStandardAssets._2D
             }
         }
 
-        public void OnTriggerExit(Collider col)
+        public void OnTriggerExit2D(Collider2D col)
         {
             //Generator
             if (col.gameObject.tag == "Generator")
