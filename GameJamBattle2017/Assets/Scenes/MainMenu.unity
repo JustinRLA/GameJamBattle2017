@@ -308,8 +308,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Un jeu par\n\nAnnie-Claude Leblanc\nJustin Loranger-Ahluwalia\nNicolas
-    Mornard\nMatthieu St-Gelais\nNikola Viel\n\nRemerciement sp\xE9cial\n..."
+  m_Text: 'Un jeu par
+
+
+    Annie-Claude Leblanc
+
+    Justin Loranger-Ahluwalia
+
+    Nicolas Mornard
+
+    Matthieu St-Gelais
+
+    Nikola Viel'
 --- !u!222 &290538536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -416,8 +426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 0}
-  m_SizeDelta: {x: 799, y: 312}
+  m_AnchoredPosition: {x: -1, y: 4}
+  m_SizeDelta: {x: 799, y: 449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587780867
 MonoBehaviour:
@@ -548,7 +558,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1357675439}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -684,6 +694,7 @@ RectTransform:
   - {fileID: 1362699357}
   - {fileID: 1486264124}
   - {fileID: 1873784354}
+  - {fileID: 1811705580}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1546,7 +1557,6 @@ RectTransform:
   - {fileID: 896964969}
   - {fileID: 1134882736}
   - {fileID: 72431790}
-  - {fileID: 1811705580}
   - {fileID: 715495421}
   - {fileID: 1521067790}
   m_Father: {fileID: 1362699357}
@@ -1832,7 +1842,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1357675439}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2225,12 +2235,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1625425809}
-  m_Father: {fileID: 1357675439}
-  m_RootOrder: 3
+  m_Father: {fileID: 798057749}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -131.6, y: -88}
+  m_AnchoredPosition: {x: -298, y: -183}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811705581
