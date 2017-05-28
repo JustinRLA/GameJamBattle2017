@@ -25,9 +25,14 @@ public class WirePart : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if(objToIgnore != null)
+        
+        if (objToIgnore != null)
         {
             partOrigin = objToIgnore.transform.position;
+        }
+        if (!isStuck)
+        {
+            return;
         }
         if (objStuckTo != null)
         {
