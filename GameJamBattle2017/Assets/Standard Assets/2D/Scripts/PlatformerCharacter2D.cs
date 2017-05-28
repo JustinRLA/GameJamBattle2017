@@ -37,7 +37,8 @@ namespace UnityStandardAssets._2D
         public GameObject lightObject;      // The light the player is currently interacting with.
         public Animator animator;
 
-
+        public AudioClip jumpSound;
+        AudioSource aSource;
 
         private void Awake()
         {
@@ -47,6 +48,7 @@ namespace UnityStandardAssets._2D
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
+            aSource = GetComponent<AudioSource>();
         }
 
 
@@ -130,6 +132,8 @@ namespace UnityStandardAssets._2D
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                Debug.Log("jump");
+                aSource.PlayOneShot(aSource.clip);
             }
 
             //If the player is stretching the cable...
