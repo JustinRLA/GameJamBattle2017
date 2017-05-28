@@ -14,52 +14,30 @@ namespace UnityStandardAssets._2D
         // Use this for initialization
         void Start()
         {
-
+            if (ApplicationModel.menuState == 0)
+            {
+                MainPanel.SetActive(true);
+                WinPanel.SetActive(false);
+                LosePanel.SetActive(false);
+            }
+            else if (ApplicationModel.menuState == 1)
+            {
+                MainPanel.SetActive(false);
+                WinPanel.SetActive(true);
+                LosePanel.SetActive(false);
+            }
+            else if (ApplicationModel.menuState == 2)
+            {
+                MainPanel.SetActive(false);
+                WinPanel.SetActive(false);
+                LosePanel.SetActive(true);
+            }
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (ApplicationModel.menuState == 0)
-            {
-                MainPanel.SetActive(true);
-                WinPanel.SetActive(false);
-                LosePanel.SetActive(false);
-            }
-            else if (ApplicationModel.menuState == 1)
-            {
-                MainPanel.SetActive(false);
-                WinPanel.SetActive(true);
-                LosePanel.SetActive(false);
-            }
-            else if (ApplicationModel.menuState == 2)
-            {
-                MainPanel.SetActive(false);
-                WinPanel.SetActive(false);
-                LosePanel.SetActive(true);
-            }
-        }
-
-        void SetMenu(int menuState)
-        {
-            if (ApplicationModel.menuState == 0)
-            {
-                MainPanel.SetActive(true);
-                WinPanel.SetActive(false);
-                LosePanel.SetActive(false);
-            }
-            else if (ApplicationModel.menuState == 1)
-            {
-                MainPanel.SetActive(false);
-                WinPanel.SetActive(true);
-                LosePanel.SetActive(false);
-            }
-            else if (ApplicationModel.menuState == 2)
-            {
-                MainPanel.SetActive(false);
-                WinPanel.SetActive(false);
-                LosePanel.SetActive(true);
-            }
+            
         }
     }
 }
