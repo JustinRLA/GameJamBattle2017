@@ -34,6 +34,7 @@ namespace UnityStandardAssets._2D
         public bool isNearCable = false;    // Is the player near a cable?
         public bool isNearLight = false;    // Is the player near a light?
         public bool stretched = false;      // Is the player stretching the cord?
+        public bool stickyFeet = false;     // Is the player standing on a sticky platform?
         public GameObject cableObject;      // The cable the player is currently interacting with.
         public GameObject lightObject;      // The light the player is currently interacting with.
         public Animator animator;
@@ -260,6 +261,15 @@ namespace UnityStandardAssets._2D
             }
         }
 
+        public void OnCollisionStay2D(Collision2D coll)
+        {
+            if (coll.gameObject.tag == "Caca")
+            {
+                stickyFeet = true;
+                m_MaxSpeed = 3F;
+            }
+        }
+
         public void OnTriggerExit2D(Collider2D col)
         {
             //Generator
@@ -272,6 +282,15 @@ namespace UnityStandardAssets._2D
             else if (col.gameObject.tag == "Light")
             {
                 isNearLight = false;
+            }
+        }
+
+        public void OnCollisionExit2D(Collision2D coll)
+        {
+            if (coll.gameObject.tag == "Caca")
+            {
+                m_MaxSpeed = 10f;
+                stickyFeet = false;
             }
         }
     }
