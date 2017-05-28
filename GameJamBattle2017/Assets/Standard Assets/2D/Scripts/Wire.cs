@@ -106,6 +106,7 @@ using UnityEngine;
                 targetPosition = hit.collider.transform.position;
                 _currentWirePart.partEnd = targetPosition;
                 _currentWirePart.isStuck = true;
+            _currentWirePart.objStuckTo = hit.collider.gameObject;
                 CreateWirePart(hit.collider.gameObject);
             }
             else
@@ -312,7 +313,7 @@ using UnityEngine;
             _wireParts[_wireParts.Count - 1].partEnd = Avatar.transform.position;
             _wireParts[_wireParts.Count - 1].displayWire = true;
             _wireParts[_wireParts.Count - 1].objToIgnore = objToIgnore;
-            if(objToIgnore != null)
+            if (objToIgnore != null)
             {
                 _wireParts[_wireParts.Count - 1].looksToRight = _wireParts[_wireParts.Count - 1].partOrigin.x < objToIgnore.transform.position.x;
             }

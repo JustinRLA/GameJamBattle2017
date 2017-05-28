@@ -9,6 +9,7 @@ public class WirePart : MonoBehaviour {
     public bool displayWire = false;
     public bool isStuck = false;
     public GameObject objToIgnore;
+    public GameObject objStuckTo;
     public LightBulbe LightPluggedTo;
     public bool looksToRight;
 
@@ -21,6 +22,18 @@ public class WirePart : MonoBehaviour {
     }
 
     private static Material lineMaterial;
+
+    private void FixedUpdate()
+    {
+        if(objToIgnore != null)
+        {
+            partOrigin = objToIgnore.transform.position;
+        }
+        if (objStuckTo != null)
+        {
+            partEnd = objStuckTo.transform.position;
+        }
+    }
 
     static void CreateLineMaterial()
     {
