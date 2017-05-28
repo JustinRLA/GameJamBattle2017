@@ -2,8 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace UnityStandardAssets._2D
-{
+
     public class PlatformerCharacter2D : MonoBehaviour
     {
         [SerializeField]
@@ -71,7 +70,7 @@ namespace UnityStandardAssets._2D
 
             if (Input.GetKey(KeyCode.Escape))
             {
-                SceneManager.LoadScene("MainMenu");
+                GameOver(0);
             }
 
             m_Grounded = false;
@@ -293,6 +292,12 @@ namespace UnityStandardAssets._2D
                 stickyFeet = false;
             }
         }
+
+        public void GameOver(int state)
+        {
+            ApplicationModel.menuState = state;
+            SceneManager.LoadScene("MainMenu");
+        }
     }
-}
+
 

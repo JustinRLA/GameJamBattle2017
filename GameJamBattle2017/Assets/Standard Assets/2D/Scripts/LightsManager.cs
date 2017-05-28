@@ -36,5 +36,10 @@ public class LightsManager : MonoBehaviour {
             Debug.Log("Next scene");
             SceneManager.LoadScene(nextSceneIndex);
         }
+        else
+        {
+            ApplicationModel.menuState = 1;
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }

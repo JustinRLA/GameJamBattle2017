@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityStandardAssets._2D
-{
+
     public class Wire : MonoBehaviour
     {
 
@@ -334,4 +333,4 @@ namespace UnityStandardAssets._2D
         }
 
     }
-}
+

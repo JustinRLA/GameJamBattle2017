@@ -1241,7 +1241,6 @@ MonoBehaviour:
   MainPanel: {fileID: 1362699356}
   WinPanel: {fileID: 1486264123}
   LosePanel: {fileID: 1873784353}
-  menuState: 0
 --- !u!4 &1395921441
 Transform:
   m_ObjectHideFlags: 0
