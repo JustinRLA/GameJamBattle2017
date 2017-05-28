@@ -290,7 +290,7 @@ namespace UnityStandardAssets._2D
                 Avatar.GetComponent<PlatformerCharacter2D>().m_MaxSpeed = 3f;   // Limit player speed
                 Avatar.GetComponent<PlatformerCharacter2D>().stretched = true;  // Activate pullback effect
             }
-            else
+            else if (Avatar.GetComponent<PlatformerCharacter2D>().stickyFeet == false)
             {
                 //Debug.Log(this.name + "isHeld");
                 Avatar.GetComponent<PlatformerCharacter2D>().m_MaxSpeed = 10f;  // Reset to standard
