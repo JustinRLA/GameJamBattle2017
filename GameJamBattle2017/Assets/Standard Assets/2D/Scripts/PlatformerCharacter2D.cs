@@ -37,8 +37,13 @@ namespace UnityStandardAssets._2D
         public GameObject lightObject;      // The light the player is currently interacting with.
         public Animator animator;
 
-        public AudioClip jumpSound;
-        AudioSource aSource;
+        public AudioSource[] sounds;
+        public AudioSource jumpSound;
+        public AudioSource landSound;
+        public AudioSource shockSound;
+        public AudioSource cablePullSound;
+        public AudioSource cableStretchSound;
+        public AudioSource cableSnapSound;
 
         private void Awake()
         {
@@ -48,8 +53,15 @@ namespace UnityStandardAssets._2D
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
-            aSource = GetComponent<AudioSource>();
-        }
+
+            sounds = GetComponents<AudioSource>();
+            jumpSound = sounds[0];
+            landSound = sounds[1];
+            shockSound = sounds[2];
+            cablePullSound = sounds[3];
+            cableStretchSound = sounds[4];
+            cableSnapSound = sounds[5];
+    }
 
 
         private void FixedUpdate()
@@ -87,6 +99,7 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
+            /*
             // If crouching, check to see if the character can stand up
             if (!crouch && m_Anim.GetBool("Crouch"))
             {
@@ -99,6 +112,7 @@ namespace UnityStandardAssets._2D
 
             // Set whether or not the character is crouching in the animator
             m_Anim.SetBool("Crouch", crouch);
+            */
 
             //only control the player if grounded or airControl is turned on
             if (m_Grounded || m_AirControl)
@@ -132,8 +146,21 @@ namespace UnityStandardAssets._2D
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-                Debug.Log("jump");
-                aSource.PlayOneShot(aSource.clip);
+                //Debug.Log("jump");
+                //aSource.PlayOneShot(aSource.clip);
+                jumpSound.Play();
+            }
+
+            //Cable Sound Controls
+            if (isHoldingCable && !stretched)
+            {
+                cableStretchSound.Stop();
+                cablePullSound.Play();
+            }
+            else if (isHoldingCable && stretched)
+            {
+                cablePullSound.Stop();
+                cableStretchSound.Play();
             }
 
             //If the player is stretching the cable...
@@ -164,10 +191,11 @@ namespace UnityStandardAssets._2D
         public void ReleaseCable()
         {
             // Release the cable
-            Debug.Log("Releasing Cable");
-            // !!!Release Animation
+            //Debug.Log("Releasing Cable");
+            cablePullSound.Stop();
+            cableStretchSound.Stop();
+            cableSnapSound.Play();
             animator.SetTrigger("Startled");
-            // !!!Cable state
             cableObject.GetComponent<Wire>().IsHeld = false;
             isHoldingCable = false;
             cableObject.GetComponent<Renderer>().material.color = Color.red;
@@ -218,9 +246,9 @@ namespace UnityStandardAssets._2D
             }
 
             //Danger
-            else if (col.gameObject.tag == "Danger")
+            else if (col.gameObject.tag == "Danger" && isHoldingCable)
             {
-                //!!! Damage animation
+                shockSound.Play();
                 ReleaseCable();
             }
         }
