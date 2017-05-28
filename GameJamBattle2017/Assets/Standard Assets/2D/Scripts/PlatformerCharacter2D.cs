@@ -222,6 +222,8 @@ using UnityEngine.SceneManagement;
         {
             Debug.Log("Light Activated");
             lightObject.GetComponent<LightBulbe>().plugged = true;
+
+        lightObject.transform.GetChild(0).gameObject.SetActive(true);
             cableObject.GetComponent<Wire>().PlugCableToLight(lightObject.GetComponent<LightBulbe>());
             cableObject.GetComponent<Wire>().IsHeld = false;
             cableObject.GetComponent<Wire>().isPlugged = true;
