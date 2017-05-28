@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets._2D
 {
@@ -66,6 +67,12 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
+
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+
             m_Grounded = false;
 
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
