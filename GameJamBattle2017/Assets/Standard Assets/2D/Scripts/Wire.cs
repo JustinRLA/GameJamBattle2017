@@ -23,7 +23,7 @@ using UnityEngine;
         public float totalLineDistance; // Total distance of all the lines
         public Vector3 targetPosition;
         public LayerMask myLayerMask;
-
+        public CableLeftUi CableLeftUi;
 
         public bool IsHeld {
             get
@@ -68,16 +68,24 @@ using UnityEngine;
         private WirePart _currentWirePart;
         private bool _isHeld = false;
         private bool test = false;
-        void FixedUpdate()
+    private void Start()
+    {
+        CableLeftUi = FindObjectOfType<CableLeftUi>();
+    }
+
+    void FixedUpdate()
         {
-        if(isPlugged)
-        {
-            DestroyWireParts();
-            return;
-        }
-        if (!IsHeld)
+            if(isPlugged)
+            {
+                DestroyWireParts();
+                return;
+            }
+            if (!IsHeld)
             {
                 return;
+            }
+            else {
+                CableLeftUi.currentWire = this;
             }
             StretchEffect();
             if (!IsHeld)
