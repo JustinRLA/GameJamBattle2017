@@ -70,7 +70,12 @@ using UnityEngine;
         private bool test = false;
         void FixedUpdate()
         {
-            if (!IsHeld)
+        if(isPlugged)
+        {
+            DestroyWireParts();
+            return;
+        }
+        if (!IsHeld)
             {
                 return;
             }
