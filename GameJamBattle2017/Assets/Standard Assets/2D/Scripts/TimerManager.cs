@@ -7,9 +7,11 @@ public class TimerManager : MonoBehaviour {
 
     public static float timeLeft = 375.0f;
     private Text timerText;
+    private PlatformerCharacter2D avatar;
 	// Use this for initialization
 	void Start () {
-		timerText = gameObject.GetComponentInChildren<Text>();
+        avatar = FindObjectOfType<PlatformerCharacter2D>();
+        timerText = gameObject.GetComponentInChildren<Text>();
     }
 	
 	// Update is called once per frame
@@ -18,11 +20,7 @@ public class TimerManager : MonoBehaviour {
         timerText.text = Mathf.FloorToInt(timeLeft).ToString();
         if (timeLeft < 0)
         {
-            GameOver();
+            avatar.GameOver(2);
         }
-    }
-
-    void GameOver()
-    {
     }
 }
