@@ -76,17 +76,14 @@ namespace UnityStandardAssets._2D
                 return;
             }
             StretchEffect();
-        }
-
-        void Update()
-        {
             if (!IsHeld)
             {
                 return;
             }
             HandleObstacles();
-            DetangleWire();
         }
+
+        
 
 
 
@@ -110,6 +107,10 @@ namespace UnityStandardAssets._2D
 
                 CreateWirePart(hit.collider.gameObject);
             }
+            else
+            {
+                DetangleWire();
+            }
         }
 
         private void DetangleWire()
@@ -126,6 +127,7 @@ namespace UnityStandardAssets._2D
                 }
                 var dir1 = _wireParts[i].partEnd - _wireParts[i].partOrigin;
                 var dir2 = _wireParts[i + 1].partEnd - _wireParts[i + 1].partOrigin;
+
                 var angle = Vector2.Angle(dir2, dir1);
                 Vector3 cross = Vector3.Cross(dir2, dir1);
                 
@@ -134,16 +136,61 @@ namespace UnityStandardAssets._2D
 
                 var isRight = _wireParts[i].partEnd.x > _wireParts[i + 1].partEnd.x;
                 var isUp = _wireParts[i].partEnd.y > _wireParts[i + 1].partEnd.y;
+                var dotProd = Vector3.Dot(dir1.normalized, dir2.normalized);
+                //Debug.Log(Vector3.Dot(dir1.normalized, dir2.normalized));
                 Debug.Log(angle);
-                if (angle >= 0 && angle < 90)
+                var firtLooksUp = _wireParts[i].partEnd.y > _wireParts[i].partOrigin.y;
+                var firstLooksRight = _wireParts[i].partEnd.x > _wireParts[i].partOrigin.x;
+                var secondLooksUp = _wireParts[i + 1].partEnd.y > _wireParts[i + 1].partOrigin.y;
+                var secondLooksRight = _wireParts[i+1].partEnd.x > _wireParts[i+1].partOrigin.x;
+
+                if(firtLooksUp && firstLooksRight)
                 {
-                    _wireParts[i].partEnd = _wireParts[i + 1].partEnd;
-                    _wireParts[i].isStuck = false;
-                    Destroy(_wireParts[i + 1]);
+                    if (firtLooksUp && firstLooksRight)
+                    {
+                        if (angle >= 270 && angle < 360)
+                        {
+                            MergeWire(i);
+                        }
+                    }
                 }
+                else if (firtLooksUp && !firstLooksRight)
+                {
+                    if (angle >= 0 && angle < 90)
+                    {
+                        MergeWire(i);
+                    }
+                }
+                else if (!firtLooksUp && firstLooksRight)
+                {
+                     if (angle >= 0 && angle < 90)
+                        {
+                            MergeWire(i);
+                        }
+                }
+                else if (!firtLooksUp && !firstLooksRight)
+                {
+                    if (angle >= 270 && angle < 360)
+                    {
+                        MergeWire(i);
+                    }
+                }
+
+                /*if (angle >= 0 && angle < 90)
+                {
+                    MergeWire(i);
+                }*/
+
             }
             //cleaning list 
             _wireParts.RemoveAll(item => item == null);
+        }
+
+        private void MergeWire(int i)
+        {
+            _wireParts[i].partEnd = _wireParts[i + 1].partEnd;
+            _wireParts[i].isStuck = false;
+            Destroy(_wireParts[i + 1]);
         }
 
         private void StretchEffect()
@@ -191,6 +238,10 @@ namespace UnityStandardAssets._2D
             _wireParts[_wireParts.Count - 1].partEnd = Avatar.transform.position;
             _wireParts[_wireParts.Count - 1].displayWire = true;
             _wireParts[_wireParts.Count - 1].objToIgnore = objToIgnore;
+            if(objToIgnore != null)
+            {
+                _wireParts[_wireParts.Count - 1].looksToRight = _wireParts[_wireParts.Count - 1].partOrigin.x < objToIgnore.transform.position.x;
+            }
         }
 
         public void PlugCableToLight(LightBulbe light)
