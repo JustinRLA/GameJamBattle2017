@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour {
 
+    private Vector2 startingPosition;
     public bool horizontalMove = false;
     public float horizontalSpeed = 1.0F;
     public int horizontalLength = 1;
@@ -33,17 +34,23 @@ public class MovingPlatform : MonoBehaviour {
         }
         startPos = transform;
 
+        startingPosition = new Vector2(transform.position.x, transform.position.y);
     }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         if (horizontalMove && verticalMove)
         {
-            transform.position = new Vector3(Mathf.PingPong(horizontalSpeed*Time.time, horizontalLength), Mathf.PingPong(verticalSpeed*Time.time, verticalLength), transform.position.z);
+            transform.position = new Vector3(startingPosition.x + Mathf.PingPong(horizontalSpeed*Time.time, horizontalLength), startingPosition.y + Mathf.PingPong(verticalSpeed*Time.time, verticalLength), transform.position.z);
+            if (Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength) >= horizontalLength || Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength) <= 0)
+            {
+                Flip();
+                //Debug.Log("Flip");
+            }
         }
         else if (horizontalMove)
         {
-            transform.position = new Vector3(Mathf.PingPong(horizontalSpeed*Time.time, horizontalLength), transform.position.y, transform.position.z);
+            transform.position = new Vector3(startingPosition.x + Mathf.PingPong(horizontalSpeed*Time.time, horizontalLength), transform.position.y, transform.position.z);
             //Debug.Log("Speed*Time " + horizontalSpeed * Time.time);
             //Debug.Log("PingPong " + Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength));
             if (Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength) >= horizontalLength || Mathf.PingPong(horizontalSpeed * Time.time, horizontalLength) <= 0)
@@ -54,8 +61,10 @@ public class MovingPlatform : MonoBehaviour {
         }
         else if (verticalMove)
         {
-            transform.position = new Vector3(transform.position.x, Mathf.PingPong(verticalSpeed*Time.time, verticalLength), transform.position.y);
+            transform.position = new Vector3(transform.position.x, startingPosition.y + Mathf.PingPong(verticalSpeed*Time.time, verticalLength), transform.position.y);
         }
+
+
         else if (useWaypoint && waypoint != null)
         {
             if (waypointBack)
