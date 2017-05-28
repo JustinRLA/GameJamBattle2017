@@ -61,7 +61,7 @@ public class MovingPlatform : MonoBehaviour {
         }
         else if (verticalMove)
         {
-            transform.position = new Vector3(transform.position.x, startingPosition.y + Mathf.PingPong(verticalSpeed*Time.time, verticalLength), transform.position.y);
+            transform.position = new Vector3(transform.position.x, startingPosition.y + Mathf.PingPong(verticalSpeed*Time.time, verticalLength), transform.position.z);
         }
 
 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4b2bdd38a0818b8468d3a175032d0b18
+timeCreated: 1495990630
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Neon Lights
+  fontNames:
+  - Neon Lights
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
