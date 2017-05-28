@@ -104,7 +104,6 @@ namespace UnityStandardAssets._2D
                 targetPosition = hit.collider.transform.position;
                 _currentWirePart.partEnd = targetPosition;
                 _currentWirePart.isStuck = true;
-
                 CreateWirePart(hit.collider.gameObject);
             }
             else
@@ -138,13 +137,86 @@ namespace UnityStandardAssets._2D
                 var isUp = _wireParts[i].partEnd.y > _wireParts[i + 1].partEnd.y;
                 var dotProd = Vector3.Dot(dir1.normalized, dir2.normalized);
                 //Debug.Log(Vector3.Dot(dir1.normalized, dir2.normalized));
-                Debug.Log(angle);
+                
                 var firtLooksUp = _wireParts[i].partEnd.y > _wireParts[i].partOrigin.y;
                 var firstLooksRight = _wireParts[i].partEnd.x > _wireParts[i].partOrigin.x;
                 var secondLooksUp = _wireParts[i + 1].partEnd.y > _wireParts[i + 1].partOrigin.y;
                 var secondLooksRight = _wireParts[i+1].partEnd.x > _wireParts[i+1].partOrigin.x;
+                var platformIsUp = _wireParts[i+1].objToIgnore.transform.parent.position.y > _wireParts[i].partEnd.y;
+                var platformIsRight = _wireParts[i+1].objToIgnore.transform.parent.position.x > _wireParts[i].partEnd.x;
 
-                if(firtLooksUp && firstLooksRight)
+                Debug.Log(angle);
+
+                if (firtLooksUp && firstLooksRight)
+                {
+                    if (platformIsRight)
+                    {
+                        if (angle >= 0 && angle < 90)
+                        {
+                            MergeWire(i);
+                        }
+                    }
+                    else
+                    {
+                        if (angle >= 270 && angle < 360)
+                        {
+                            MergeWire(i);
+                        }
+                    }
+                }
+                else if (firtLooksUp && !firstLooksRight)
+                {
+                    if (platformIsRight)
+                    {
+                        if (angle >= 0 && angle < 90)
+                        {
+                            MergeWire(i);
+                        }
+                    }
+                    else
+                    {
+                        if (angle >= 270 && angle < 360)
+                        {
+                            MergeWire(i);
+                        }
+                    }
+                }
+                else if (!firtLooksUp && firstLooksRight)
+                {
+                    if (platformIsRight)
+                    {
+                        if (angle >= 270 && angle < 360)
+                        {
+                            MergeWire(i);
+                        }
+                    }
+                    else
+                    {
+                        if (angle >= 0 && angle < 90)
+                        {
+                            MergeWire(i);
+                        }
+                    }
+                }
+                else if (!firtLooksUp && !firstLooksRight)
+                {
+                    if (platformIsRight)
+                    {
+                        if (angle >= 270 && angle < 360)
+                        {
+                            MergeWire(i);
+                        }
+                    }
+                    else
+                    {
+                        if (angle >= 0 && angle < 90)
+                        {
+                            MergeWire(i);
+                        }
+                    }
+                }
+
+                /*if(firtLooksUp && firstLooksRight)
                 {
                     if (firtLooksUp && firstLooksRight)
                     {
@@ -174,7 +246,7 @@ namespace UnityStandardAssets._2D
                     {
                         MergeWire(i);
                     }
-                }
+                }*/
 
                 /*if (angle >= 0 && angle < 90)
                 {

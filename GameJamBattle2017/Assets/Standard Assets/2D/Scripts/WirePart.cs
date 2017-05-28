@@ -60,7 +60,7 @@ public class WirePart : MonoBehaviour {
             // Draw lines
             GL.Begin(GL.LINES);
             //Draw X axis
-            GL.Color(Color.black);
+            GL.Color(Color.yellow);
             if(LightPluggedTo != null)
             {
                 GL.Vertex3(LightPluggedTo.transform.position.x, LightPluggedTo.transform.position.y, LightPluggedTo.transform.position.z);
