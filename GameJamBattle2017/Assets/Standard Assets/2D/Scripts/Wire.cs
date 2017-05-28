@@ -83,8 +83,11 @@ namespace UnityStandardAssets._2D
             HandleObstacles();
         }
 
-        
 
+        private void LateUpdate()
+        {
+            DetangleWire();
+        }
 
 
         //Functions
@@ -108,7 +111,7 @@ namespace UnityStandardAssets._2D
             }
             else
             {
-                DetangleWire();
+                
             }
         }
 
