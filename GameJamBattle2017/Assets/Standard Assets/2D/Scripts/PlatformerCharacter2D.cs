@@ -260,6 +260,12 @@ namespace UnityStandardAssets._2D
             }
         }
 
+        public void OnCollisionEnter2D(Collision2D coll)
+        {
+            if (coll.gameObject.tag == "Caca")
+                m_MaxSpeed = 3F;
+        }
+
         public void OnTriggerExit2D(Collider2D col)
         {
             //Generator
@@ -273,6 +279,12 @@ namespace UnityStandardAssets._2D
             {
                 isNearLight = false;
             }
+        }
+
+        public void OnCollisionExit2D(Collision2D coll)
+        {
+            if (coll.gameObject.tag == "Caca")
+                m_MaxSpeed = 10f;
         }
     }
 }

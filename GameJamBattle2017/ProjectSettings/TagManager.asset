@@ -8,6 +8,7 @@ TagManager:
   - Light
   - Platform
   - Danger
+  - Caca
   layers:
   - Default
   - TransparentFX
