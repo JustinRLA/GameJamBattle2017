@@ -1,0 +1,66 @@
+Event	ID	Name			Wwise Object Path	Notes
+	106057874	Wire_Rewind_01			\Default Work Unit\Wire\Wire_Rewind_01	
+	120299665	Pigeon_Fly_01			\Default Work Unit\Amb\Pigeon_Fly_01	
+	130275037	Platform_Loop_01			\Default Work Unit\Amb\Platform_Loop_01	
+	347377382	UI_Hover_01			\Default Work Unit\UI\UI_Hover_01	
+	515498461	Mus_Level_01			\Default Work Unit\Music\Mus_Level_01	
+	591949760	UI_Select_01			\Default Work Unit\UI\UI_Select_01	
+	733923149	Power_Loop_01			\Default Work Unit\Amb\Power_Loop_01	
+	1122608996	Denis_Land_01			\Default Work Unit\Avatar\Denis_Land_01	
+	2254469782	Wire_Back_01			\Default Work Unit\Wire\Wire_Back_01	
+	2513369922	Wire_Stretch_01			\Default Work Unit\Wire\Wire_Stretch_01	
+	2579127662	Denis_Walk			\Default Work Unit\Avatar\Denis_Walk	
+	2741272089	Denis_Jump			\Default Work Unit\Avatar\Denis_Jump	
+	2894026586	Amb_Level_01			\Default Work Unit\Amb\Amb_Level_01	
+	3048554965	Pigeon_Chatter_01			\Default Work Unit\Amb\Pigeon_Chatter_01	
+	3051451975	Wire_Stuck			\Default Work Unit\Wire\Wire_Stuck	
+	3184674562	Wire_Take_01			\Default Work Unit\Wire\Wire_Take_01	
+	3356300706	UI_Cancel_01			\Default Work Unit\UI\UI_Cancel_01	
+	3359155179	Light_Connected			\Default Work Unit\Wire\Light_Connected	
+	4194456506	Denis_Electric_01			\Default Work Unit\Avatar\Denis_Electric_01	
+	4234731666	Mus_Menu_01			\Default Work Unit\Music\Mus_Menu_01	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2108779966	Walk			\Default Work Unit\Walk	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Walk			
+	2058049674	Wood	Walk			
+	2473969246	Metal	Walk			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	57509976	Wire_Stuck_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Stuck_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Stuck\Wire_Stuck_01		10308
+	62809766	Light_Connected_06	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_06		273584
+	119760876	Amb_Level_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Amb_Level_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Level_01		5024792
+	133567809	UI_Cancel_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\UI_Cancel_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Cancel_01		62124
+	143446871	Platform_Loop_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Platform_Loop_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Platform_Loop_01		2534908
+	161552458	Light_Connected_09	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_09_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_09		556740
+	173678939	Denis_Electric_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Denis_Electric_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Avatar\Denis_Electric_01		150324
+	175108392	Power_Loop_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Power_Loop_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Power_Loop_01		1519792
+	191626305	Wire_Rewind_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Rewind_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Rewind_01		225508
+	264163263	Wire_Stuck_04	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Stuck_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Stuck\Wire_Stuck_04		3544
+	264206483	Light_Connected_04	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_04		285540
+	277462503	Light_Connected_05	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_05		292480
+	295595108	Denis_Jump_02	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Denis_Jump_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Avatar\Denis_Jump\Denis_Jump_02		27052
+	306951959	Wire_Stretch_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Stretch_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Stretch_01		435016
+	345673084	Light_Connected_07	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_07		263220
+	370157125	Denis_Jump_03	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Denis_Jump_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Avatar\Denis_Jump\Denis_Jump_03		23264
+	393105002	Denis_Land_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Denis_Land _01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Avatar\Denis_Land_01		107852
+	417172909	Wire_Stuck_05	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Stuck_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Stuck\Wire_Stuck_05		5336
+	472558253	Light_Connected_08	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_08_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_08		245864
+	480867462	Light_Connected_03	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_03		287944
+	508620858	Wire_Back_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Back_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Back_01		505516
+	597783091	Wire_Take_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Take_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Take_01		14608
+	598755225	Wire_Stuck_03	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Stuck_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Stuck\Wire_Stuck_03		6604
+	607526148	Pigeon_Fly_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Pigeon_Fly_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Pigeon_Fly_01		171400
+	615221613	UI_Hover_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\UI_Hover_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Hover_01		23968
+	666264950	Pigeon_Chatter_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Pigeon_Chatter_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Pigeon_Chatter_01		2344412
+	673302247	Mus_Menu_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Mus_Menu_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Mus_Menu_01\Mus_Menu_01\Mus_Menu_01		2822464
+	731408071	Mus_Level_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Mus_Level_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Mus_Level_01\Mus_Level_01\Mus_Level_01		5080384
+	815052535	Light_Connected_02	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_02		291864
+	864691260	Light_Connected_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_01		292184
+	869380000	Denis_Jump_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Denis_Jump_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Avatar\Denis_Jump\Denis_Jump_01		23188
+	941685200	Wire_Stuck_02	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Wire_Stuck_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Wire_Stuck\Wire_Stuck_02		8748
+	956918286	UI_Select_01	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\UI_Select_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Select_01		65240
+	1040704784	Light_Connected_10	C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\SFX\Light_Connected_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wire\Light_Connected\Light_Connected_10		260080
+

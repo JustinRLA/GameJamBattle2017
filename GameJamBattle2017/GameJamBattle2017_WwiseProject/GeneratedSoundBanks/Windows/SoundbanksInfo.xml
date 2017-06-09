@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1100754030" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\ALL</ObjectPath>
+			<ShortName>ALL</ShortName>
+			<Path>ALL.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2894026586" Name="Amb_Level_01" ObjectPath="\Events\Default Work Unit\Amb\Amb_Level_01"/>
+				<Event Id="4194456506" Name="Denis_Electric_01" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Electric_01"/>
+				<Event Id="2741272089" Name="Denis_Jump" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Jump"/>
+				<Event Id="1122608996" Name="Denis_Land_01" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Land_01"/>
+				<Event Id="2579127662" Name="Denis_Walk" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Walk"/>
+				<Event Id="3359155179" Name="Light_Connected" ObjectPath="\Events\Default Work Unit\Wire\Light_Connected"/>
+				<Event Id="515498461" Name="Mus_Level_01" ObjectPath="\Events\Default Work Unit\Music\Mus_Level_01"/>
+				<Event Id="4234731666" Name="Mus_Menu_01" ObjectPath="\Events\Default Work Unit\Music\Mus_Menu_01"/>
+				<Event Id="3048554965" Name="Pigeon_Chatter_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Chatter_01"/>
+				<Event Id="120299665" Name="Pigeon_Fly_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Fly_01"/>
+				<Event Id="130275037" Name="Platform_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Platform_Loop_01"/>
+				<Event Id="733923149" Name="Power_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Power_Loop_01"/>
+				<Event Id="3356300706" Name="UI_Cancel_01" ObjectPath="\Events\Default Work Unit\UI\UI_Cancel_01"/>
+				<Event Id="347377382" Name="UI_Hover_01" ObjectPath="\Events\Default Work Unit\UI\UI_Hover_01"/>
+				<Event Id="591949760" Name="UI_Select_01" ObjectPath="\Events\Default Work Unit\UI\UI_Select_01"/>
+				<Event Id="2254469782" Name="Wire_Back_01" ObjectPath="\Events\Default Work Unit\Wire\Wire_Back_01"/>
+				<Event Id="106057874" Name="Wire_Rewind_01" ObjectPath="\Events\Default Work Unit\Wire\Wire_Rewind_01"/>
+				<Event Id="2513369922" Name="Wire_Stretch_01" ObjectPath="\Events\Default Work Unit\Wire\Wire_Stretch_01"/>
+				<Event Id="3051451975" Name="Wire_Stuck" ObjectPath="\Events\Default Work Unit\Wire\Wire_Stuck"/>
+				<Event Id="3184674562" Name="Wire_Take_01" ObjectPath="\Events\Default Work Unit\Wire\Wire_Take_01"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="57509976" Language="SFX">
+					<ShortName>Wire_Stuck_01.wav</ShortName>
+					<Path>SFX\Wire_Stuck_01_9E69E797.wem</Path>
+				</File>
+				<File Id="62809766" Language="SFX">
+					<ShortName>Light_Connected_06.wav</ShortName>
+					<Path>SFX\Light_Connected_06_9E69E797.wem</Path>
+				</File>
+				<File Id="119760876" Language="SFX">
+					<ShortName>Amb_Level_01.wav</ShortName>
+					<Path>SFX\Amb_Level_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="133567809" Language="SFX">
+					<ShortName>UI_Cancel_01.wav</ShortName>
+					<Path>SFX\UI_Cancel_01_9E69E797.wem</Path>
+				</File>
+				<File Id="143446871" Language="SFX">
+					<ShortName>Platform_Loop_01.wav</ShortName>
+					<Path>SFX\Platform_Loop_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="161552458" Language="SFX">
+					<ShortName>Light_Connected_09.wav</ShortName>
+					<Path>SFX\Light_Connected_09_9E69E797.wem</Path>
+				</File>
+				<File Id="173678939" Language="SFX">
+					<ShortName>Denis_Electric_01.wav</ShortName>
+					<Path>SFX\Denis_Electric_01_9E69E797.wem</Path>
+				</File>
+				<File Id="175108392" Language="SFX">
+					<ShortName>Power_Loop_01.wav</ShortName>
+					<Path>SFX\Power_Loop_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="191626305" Language="SFX">
+					<ShortName>Wire_Rewind_01.wav</ShortName>
+					<Path>SFX\Wire_Rewind_01_9E69E797.wem</Path>
+				</File>
+				<File Id="264163263" Language="SFX">
+					<ShortName>Wire_Stuck_04.wav</ShortName>
+					<Path>SFX\Wire_Stuck_04_9E69E797.wem</Path>
+				</File>
+				<File Id="264206483" Language="SFX">
+					<ShortName>Light_Connected_04.wav</ShortName>
+					<Path>SFX\Light_Connected_04_9E69E797.wem</Path>
+				</File>
+				<File Id="277462503" Language="SFX">
+					<ShortName>Light_Connected_05.wav</ShortName>
+					<Path>SFX\Light_Connected_05_9E69E797.wem</Path>
+				</File>
+				<File Id="295595108" Language="SFX">
+					<ShortName>Denis_Jump_02.wav</ShortName>
+					<Path>SFX\Denis_Jump_02_9E69E797.wem</Path>
+				</File>
+				<File Id="306951959" Language="SFX">
+					<ShortName>Wire_Stretch_01.wav</ShortName>
+					<Path>SFX\Wire_Stretch_01_9E69E797.wem</Path>
+				</File>
+				<File Id="345673084" Language="SFX">
+					<ShortName>Light_Connected_07.wav</ShortName>
+					<Path>SFX\Light_Connected_07_9E69E797.wem</Path>
+				</File>
+				<File Id="370157125" Language="SFX">
+					<ShortName>Denis_Jump_03.wav</ShortName>
+					<Path>SFX\Denis_Jump_03_9E69E797.wem</Path>
+				</File>
+				<File Id="393105002" Language="SFX">
+					<ShortName>Denis_Land _01.wav</ShortName>
+					<Path>SFX\Denis_Land _01_9E69E797.wem</Path>
+				</File>
+				<File Id="417172909" Language="SFX">
+					<ShortName>Wire_Stuck_05.wav</ShortName>
+					<Path>SFX\Wire_Stuck_05_9E69E797.wem</Path>
+				</File>
+				<File Id="472558253" Language="SFX">
+					<ShortName>Light_Connected_08.wav</ShortName>
+					<Path>SFX\Light_Connected_08_9E69E797.wem</Path>
+				</File>
+				<File Id="480867462" Language="SFX">
+					<ShortName>Light_Connected_03.wav</ShortName>
+					<Path>SFX\Light_Connected_03_9E69E797.wem</Path>
+				</File>
+				<File Id="508620858" Language="SFX">
+					<ShortName>Wire_Back_01.wav</ShortName>
+					<Path>SFX\Wire_Back_01_9E69E797.wem</Path>
+				</File>
+				<File Id="597783091" Language="SFX">
+					<ShortName>Wire_Take_01.wav</ShortName>
+					<Path>SFX\Wire_Take_01_9E69E797.wem</Path>
+				</File>
+				<File Id="598755225" Language="SFX">
+					<ShortName>Wire_Stuck_03.wav</ShortName>
+					<Path>SFX\Wire_Stuck_03_9E69E797.wem</Path>
+				</File>
+				<File Id="607526148" Language="SFX">
+					<ShortName>Pigeon_Fly_01.wav</ShortName>
+					<Path>SFX\Pigeon_Fly_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="615221613" Language="SFX">
+					<ShortName>UI_Hover_01.wav</ShortName>
+					<Path>SFX\UI_Hover_01_9E69E797.wem</Path>
+				</File>
+				<File Id="666264950" Language="SFX">
+					<ShortName>Pigeon_Chatter_01.wav</ShortName>
+					<Path>SFX\Pigeon_Chatter_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="673302247" Language="SFX">
+					<ShortName>Mus_Menu_01.wav</ShortName>
+					<Path>SFX\Mus_Menu_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="731408071" Language="SFX">
+					<ShortName>Mus_Level_01.wav</ShortName>
+					<Path>SFX\Mus_Level_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="815052535" Language="SFX">
+					<ShortName>Light_Connected_02.wav</ShortName>
+					<Path>SFX\Light_Connected_02_9E69E797.wem</Path>
+				</File>
+				<File Id="864691260" Language="SFX">
+					<ShortName>Light_Connected_01.wav</ShortName>
+					<Path>SFX\Light_Connected_01_9E69E797.wem</Path>
+				</File>
+				<File Id="869380000" Language="SFX">
+					<ShortName>Denis_Jump_01.wav</ShortName>
+					<Path>SFX\Denis_Jump_01_9E69E797.wem</Path>
+				</File>
+				<File Id="941685200" Language="SFX">
+					<ShortName>Wire_Stuck_02.wav</ShortName>
+					<Path>SFX\Wire_Stuck_02_9E69E797.wem</Path>
+				</File>
+				<File Id="956918286" Language="SFX">
+					<ShortName>UI_Select_01.wav</ShortName>
+					<Path>SFX\UI_Select_01_9E69E797.wem</Path>
+				</File>
+				<File Id="1040704784" Language="SFX">
+					<ShortName>Light_Connected_10.wav</ShortName>
+					<Path>SFX\Light_Connected_10_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
