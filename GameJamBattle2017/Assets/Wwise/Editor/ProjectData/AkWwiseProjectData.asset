@@ -12,11 +12,315 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
-  EventWwu: []
-  AuxBusWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  BankWwu: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E5C89338-4BF8-46AF-BFE9-867F1E4E10AC}'
+    m_lastTimePsrt1: 1001944484
+    m_lastTimePart2: -1999327385
+    List:
+    - Name: Amb_Level_01
+      Path: Default Work Unit\Amb\Amb_Level_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Amb_Level_01
+        ObjectType: 3
+      ID: -1400940710
+      Guid: 80522e2fcf70c94894aa5ae92a6f6c31
+      maxAttenuation: 0
+    - Name: Denis_Electric_01
+      Path: Default Work Unit\Avatar\Denis_Electric_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Avatar
+        ObjectType: 4
+      - ElementName: Denis_Electric_01
+        ObjectType: 3
+      ID: -100510790
+      Guid: 48b6e6a429e7364ea55a6b771be9c19e
+      maxAttenuation: 0
+    - Name: Denis_Jump
+      Path: Default Work Unit\Avatar\Denis_Jump
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Avatar
+        ObjectType: 4
+      - ElementName: Denis_Jump
+        ObjectType: 3
+      ID: -1553695207
+      Guid: 846be4400587d94fb9fe601dc4f1bd56
+      maxAttenuation: 0
+    - Name: Denis_Land_01
+      Path: Default Work Unit\Avatar\Denis_Land_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Avatar
+        ObjectType: 4
+      - ElementName: Denis_Land_01
+        ObjectType: 3
+      ID: 1122608996
+      Guid: 0fb959127753014fb6489809012cc545
+      maxAttenuation: 0
+    - Name: Denis_Walk
+      Path: Default Work Unit\Avatar\Denis_Walk
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Avatar
+        ObjectType: 4
+      - ElementName: Denis_Walk
+        ObjectType: 3
+      ID: -1715839634
+      Guid: 17903e6394eff64cabaf9d65cf93519a
+      maxAttenuation: 0
+    - Name: Light_Connected
+      Path: Default Work Unit\Wire\Light_Connected
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Wire
+        ObjectType: 4
+      - ElementName: Light_Connected
+        ObjectType: 3
+      ID: -935812117
+      Guid: facfe1eb366b644eb5c7b4d0f4cbe4bc
+      maxAttenuation: 0
+    - Name: Mus_Level_01
+      Path: Default Work Unit\Music\Mus_Level_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Mus_Level_01
+        ObjectType: 3
+      ID: 515498461
+      Guid: 745cff7672e5ca45b2f194b149dbc1c9
+      maxAttenuation: 0
+    - Name: Mus_Menu_01
+      Path: Default Work Unit\Music\Mus_Menu_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Mus_Menu_01
+        ObjectType: 3
+      ID: -60235630
+      Guid: 74c47908f2e6ca45a707b0ed32a57b38
+      maxAttenuation: 0
+    - Name: Pigeon_Chatter_01
+      Path: Default Work Unit\Amb\Pigeon_Chatter_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Pigeon_Chatter_01
+        ObjectType: 3
+      ID: -1246412331
+      Guid: 679696b4b8abe441a9db92839d6b57a9
+      maxAttenuation: 0
+    - Name: Pigeon_Fly_01
+      Path: Default Work Unit\Amb\Pigeon_Fly_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Pigeon_Fly_01
+        ObjectType: 3
+      ID: 120299665
+      Guid: 312244ac8c8e39448a808a1107474b90
+      maxAttenuation: 0
+    - Name: Platform_Loop_01
+      Path: Default Work Unit\Amb\Platform_Loop_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Platform_Loop_01
+        ObjectType: 3
+      ID: 130275037
+      Guid: 413d03451377254b8b43013f88b91fd4
+      maxAttenuation: 0
+    - Name: Power_Loop_01
+      Path: Default Work Unit\Amb\Power_Loop_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Power_Loop_01
+        ObjectType: 3
+      ID: 733923149
+      Guid: 1f01cfea7530374b83dbea7939f12880
+      maxAttenuation: 0
+    - Name: UI_Cancel_01
+      Path: Default Work Unit\UI\UI_Cancel_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Cancel_01
+        ObjectType: 3
+      ID: -938666590
+      Guid: 68ca6a7e8b97ef4bb4a5a50dbeb9b506
+      maxAttenuation: 0
+    - Name: UI_Hover_01
+      Path: Default Work Unit\UI\UI_Hover_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Hover_01
+        ObjectType: 3
+      ID: 347377382
+      Guid: 3db25550fb23c64f9a533b7fab156714
+      maxAttenuation: 0
+    - Name: UI_Select_01
+      Path: Default Work Unit\UI\UI_Select_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Select_01
+        ObjectType: 3
+      ID: 591949760
+      Guid: 1c65c39283feb34e82f7de5311287375
+      maxAttenuation: 0
+    - Name: Wire_Back_01
+      Path: Default Work Unit\Wire\Wire_Back_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Wire
+        ObjectType: 4
+      - ElementName: Wire_Back_01
+        ObjectType: 3
+      ID: -2040497514
+      Guid: a8fcffa783319941b106a29e7b0c57f3
+      maxAttenuation: 0
+    - Name: Wire_Rewind_01
+      Path: Default Work Unit\Wire\Wire_Rewind_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Wire
+        ObjectType: 4
+      - ElementName: Wire_Rewind_01
+        ObjectType: 3
+      ID: 106057874
+      Guid: 0a63ff5e4732074ba0cb7b62892e2e0b
+      maxAttenuation: 0
+    - Name: Wire_Stretch_01
+      Path: Default Work Unit\Wire\Wire_Stretch_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Wire
+        ObjectType: 4
+      - ElementName: Wire_Stretch_01
+        ObjectType: 3
+      ID: -1781597374
+      Guid: 8dcc772c6376d5408de7e5e0e7c7ea04
+      maxAttenuation: 0
+    - Name: Wire_Stuck
+      Path: Default Work Unit\Wire\Wire_Stuck
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Wire
+        ObjectType: 4
+      - ElementName: Wire_Stuck
+        ObjectType: 3
+      ID: -1243515321
+      Guid: 06e23a7c3c067e459ad2c4ad55844c8a
+      maxAttenuation: 0
+    - Name: Wire_Take_01
+      Path: Default Work Unit\Wire\Wire_Take_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Wire
+        ObjectType: 4
+      - ElementName: Wire_Take_01
+        ObjectType: 3
+      ID: -1110292734
+      Guid: d613f6c807c0b843915633daa1b61950
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E8414EFE-46B4-4579-9202-D8668E7A9DF4}'
+    m_lastTimePsrt1: 2145905317
+    m_lastTimePart2: -1999327388
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A5D891E6-E439-4D25-A338-8045C65F8EEA}'
+    m_lastTimePsrt1: -252099964
+    m_lastTimePart2: -1999327387
+    List:
+    - Name: Walk
+      Path: Default Work Unit\Walk
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Walk
+        ObjectType: 9
+      ID: 2108779966
+      Guid: 92163c068fd8824382f38a072e6c8ef5
+      values:
+      - Metal
+      - None
+      - Wood
+      ValueIcons:
+      - ElementName: Metal
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Wood
+        ObjectType: 8
+      valueIDs: 5ec67593db3ba32c8a58ab7a
+      ValueGuids:
+      - bytes: 6bfe5b18100fcf4dae9b1f1147256e10
+      - bytes: 8a12aebd873c6542b603302959415320
+      - bytes: fea3ab1e09d0ee4aa09bda2c2bd01230
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{CC0A5BAA-C7B2-480E-87E8-B991437CDCD3}'
+    m_lastTimePsrt1: 2146216239
+    m_lastTimePart2: -1999327388
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{34410B1E-FD5F-4F95-8FC4-A20C40663309}'
+    m_lastTimePsrt1: -339695348
+    m_lastTimePart2: -1999327380
+    List:
+    - Name: ALL
+      Path: Default Work Unit\ALL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ALL
+        ObjectType: 7
+      ID: 1100754030
+      Guid: 06b120bb8f42fd41ac6976cb8d22b654
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0

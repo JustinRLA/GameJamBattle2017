@@ -1,11 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamBattle2017.Plugins", "GameJamBattle2017.Plugins.csproj", "{5FEDD9D3-3D0A-15CE-5AA1-C88A5F642D40}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamBattle2017", "Assembly-CSharp-firstpass.csproj", "{0DB2C279-F546-D5C2-8D03-6DD9A9D0E50B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamBattle2017", "GameJamBattle2017.csproj", "{DB5945FF-BFF2-6308-33D3-3D38E647B3BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamBattle2017", "Assembly-CSharp.csproj", "{D058CF27-28F1-6D04-ADD5-F2279433237A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamBattle2017.Editor.Plugins", "GameJamBattle2017.Editor.Plugins.csproj", "{A5D09710-A147-0FC7-9722-57B19CF75EA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamBattle2017", "Assembly-CSharp-Editor-firstpass.csproj", "{64ABAFD0-C71D-1555-2621-054AF96E43A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamBattle2017", "Assembly-CSharp-Editor.csproj", "{5F403EF3-392B-5343-8D5E-3C99ACF4E69E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,20 +15,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5FEDD9D3-3D0A-15CE-5AA1-C88A5F642D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FEDD9D3-3D0A-15CE-5AA1-C88A5F642D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5FEDD9D3-3D0A-15CE-5AA1-C88A5F642D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5FEDD9D3-3D0A-15CE-5AA1-C88A5F642D40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB5945FF-BFF2-6308-33D3-3D38E647B3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB5945FF-BFF2-6308-33D3-3D38E647B3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB5945FF-BFF2-6308-33D3-3D38E647B3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB5945FF-BFF2-6308-33D3-3D38E647B3BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5D09710-A147-0FC7-9722-57B19CF75EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5D09710-A147-0FC7-9722-57B19CF75EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5D09710-A147-0FC7-9722-57B19CF75EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5D09710-A147-0FC7-9722-57B19CF75EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB2C279-F546-D5C2-8D03-6DD9A9D0E50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB2C279-F546-D5C2-8D03-6DD9A9D0E50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB2C279-F546-D5C2-8D03-6DD9A9D0E50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB2C279-F546-D5C2-8D03-6DD9A9D0E50B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D058CF27-28F1-6D04-ADD5-F2279433237A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D058CF27-28F1-6D04-ADD5-F2279433237A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D058CF27-28F1-6D04-ADD5-F2279433237A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D058CF27-28F1-6D04-ADD5-F2279433237A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64ABAFD0-C71D-1555-2621-054AF96E43A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64ABAFD0-C71D-1555-2621-054AF96E43A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64ABAFD0-C71D-1555-2621-054AF96E43A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64ABAFD0-C71D-1555-2621-054AF96E43A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F403EF3-392B-5343-8D5E-3C99ACF4E69E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F403EF3-392B-5343-8D5E-3C99ACF4E69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F403EF3-392B-5343-8D5E-3C99ACF4E69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F403EF3-392B-5343-8D5E-3C99ACF4E69E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
