@@ -156,7 +156,8 @@ using UnityEngine.SceneManagement;
                 //Debug.Log("jump");
                 //aSource.PlayOneShot(aSource.clip);
                 jumpSound.Play();
-            }
+                AkSoundEngine.PostEvent("Denis_Jump", gameObject);
+        }
 
             //Cable Sound Controls
             if (isHoldingCable && !stretched)

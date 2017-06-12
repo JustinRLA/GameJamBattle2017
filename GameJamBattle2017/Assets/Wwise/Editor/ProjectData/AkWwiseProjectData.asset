@@ -323,6 +323,9 @@ MonoBehaviour:
       Guid: 06b120bb8f42fd41ac6976cb8d22b654
   ExpandedItems:
   - /GameJamBattle2017_WwiseProject
+  - /GameJamBattle2017_WwiseProject/Events
+  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit
+  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Avatar
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
