@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityStandardAssets._2D
-{
+
     public class MenuSelector : MonoBehaviour
     {
 
@@ -40,4 +39,3 @@ namespace UnityStandardAssets._2D
             
         }
     }
-}
