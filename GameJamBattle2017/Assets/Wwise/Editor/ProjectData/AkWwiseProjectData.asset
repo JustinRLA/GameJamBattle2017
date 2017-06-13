@@ -325,8 +325,7 @@ MonoBehaviour:
   - /GameJamBattle2017_WwiseProject
   - /GameJamBattle2017_WwiseProject/Events
   - /GameJamBattle2017_WwiseProject/Events/Default Work Unit
-  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Avatar
-  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Wire
+  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/UI
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
