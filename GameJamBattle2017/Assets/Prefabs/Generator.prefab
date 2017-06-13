@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4005898322953874}
   - component: {fileID: 61667552672686422}
   - component: {fileID: 212688792444217948}
-  - component: {fileID: 82914756725720614}
   - component: {fileID: 95015184063135628}
+  - component: {fileID: 114576271529178186}
+  - component: {fileID: 114018464137342488}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -72,8 +73,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1338385146999578}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.24, y: 5.34, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.113692, y: -9.119561, z: 56.71875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4994485836473858}
@@ -130,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &61667552672686422
 BoxCollider2D:
@@ -180,88 +181,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!82 &82914756725720614
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1338385146999578}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b3fa2e86d40543a4aa1240d304c1ad01, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!95 &95015184063135628
 Animator:
   serializedVersion: 3
@@ -279,6 +200,30 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114018464137342488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1338385146999578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5906ee0487c09489ee1a72e6b264b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: 1f01cfea7530374b83dbea7939f12880
+  eventID: 733923149
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  multiPositionTypeLabel: 0
+  multiPositionArray: []
 --- !u!114 &114532972121514930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -293,8 +238,8 @@ MonoBehaviour:
   Avatar: {fileID: 0}
   Corners: []
   cordLength: 0
-  cordMaxLength: 100
-  cordStretchThreshold: 80
+  cordMaxLength: 50
+  cordStretchThreshold: 40
   lineDirection: {x: 0, y: 0}
   lineDistance: 0
   lineCount: 0
@@ -303,6 +248,7 @@ MonoBehaviour:
   myLayerMask:
     serializedVersion: 2
     m_Bits: 512
+  CableLeftUi: {fileID: 0}
   isPlugged: 0
 --- !u!114 &114535562765965624
 MonoBehaviour:
@@ -318,8 +264,8 @@ MonoBehaviour:
   Avatar: {fileID: 0}
   Corners: []
   cordLength: 0
-  cordMaxLength: 25
-  cordStretchThreshold: 20
+  cordMaxLength: 30
+  cordStretchThreshold: 25
   lineDirection: {x: 0, y: 0}
   lineDistance: 0
   lineCount: 0
@@ -328,7 +274,26 @@ MonoBehaviour:
   myLayerMask:
     serializedVersion: 2
     m_Bits: 512
+  CableLeftUi: {fileID: 0}
   isPlugged: 0
+--- !u!114 &114576271529178186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1338385146999578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e141a07dfd04b574fa875c649158b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
 --- !u!212 &212208230902892956
 SpriteRenderer:
   m_ObjectHideFlags: 1

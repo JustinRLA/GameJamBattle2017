@@ -22,12 +22,14 @@
 				<Event Id="2808565782" Name="Denis_Land" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Land"/>
 				<Event Id="2579127662" Name="Denis_Walk" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Walk"/>
 				<Event Id="3359155179" Name="Light_Connected" ObjectPath="\Events\Default Work Unit\Wire\Light_Connected"/>
-				<Event Id="3861663441" Name="Mus_Level" ObjectPath="\Events\Default Work Unit\Music\Mus_Level"/>
+				<Event Id="683676466" Name="Mus_Level1" ObjectPath="\Events\Default Work Unit\Music\Mus_Level1"/>
+				<Event Id="683676465" Name="Mus_Level2" ObjectPath="\Events\Default Work Unit\Music\Mus_Level2"/>
+				<Event Id="683676464" Name="Mus_Level3" ObjectPath="\Events\Default Work Unit\Music\Mus_Level3"/>
 				<Event Id="3149643052" Name="Mus_Menu" ObjectPath="\Events\Default Work Unit\Music\Mus_Menu"/>
-				<Event Id="3048554965" Name="Pigeon_Chatter_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Chatter_01"/>
-				<Event Id="120299665" Name="Pigeon_Fly_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Fly_01"/>
-				<Event Id="130275037" Name="Platform_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Platform_Loop_01"/>
-				<Event Id="733923149" Name="Power_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Power_Loop_01"/>
+				<Event Id="3048554965" Name="Pigeon_Chatter_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Chatter_01" MaxAttenuation="20.000000"/>
+				<Event Id="120299665" Name="Pigeon_Fly_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Fly_01" MaxAttenuation="20.000000"/>
+				<Event Id="130275037" Name="Platform_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Platform_Loop_01" MaxAttenuation="20.000000"/>
+				<Event Id="733923149" Name="Power_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Power_Loop_01" MaxAttenuation="20.000000"/>
 				<Event Id="3083016892" Name="UI_Cancel" ObjectPath="\Events\Default Work Unit\UI\UI_Cancel"/>
 				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Default Work Unit\UI\UI_Hover"/>
 				<Event Id="2774129122" Name="UI_Select" ObjectPath="\Events\Default Work Unit\UI\UI_Select"/>

@@ -38,6 +38,9 @@ GameObject:
   - component: {fileID: 212069205905827826}
   - component: {fileID: 114639363769968194}
   - component: {fileID: 61761241276373890}
+  - component: {fileID: 114090202994355002}
+  - component: {fileID: 114697629344129980}
+  - component: {fileID: 114978602130165878}
   m_Layer: 0
   m_Name: PlatformMobile
   m_TagString: Untagged
@@ -93,8 +96,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1423103160814682}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.065312, y: 3.1059866, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -24.936586, y: -10.257853, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4837327866409192}
@@ -177,6 +180,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1.05}
   m_EdgeRadius: 0
+--- !u!114 &114090202994355002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1423103160814682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a34e561dd5df05458837e8eb7a4d8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114639363769968194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,17 +202,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f0adf10d5dfac48b2df73e74fe71c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalMove: 0
+  horizontalMove: 1
   horizontalSpeed: 1
-  horizontalLength: 1
+  horizontalLength: 2
   verticalMove: 0
   verticalSpeed: 1
-  verticalLength: 1
+  verticalLength: 2
   useWaypoint: 0
   waypointSpeed: 1
   isBird: 0
   animator: {fileID: 0}
   waypoint: {fileID: 0}
+--- !u!114 &114697629344129980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1423103160814682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e141a07dfd04b574fa875c649158b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
+--- !u!114 &114978602130165878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1423103160814682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5906ee0487c09489ee1a72e6b264b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: 413d03451377254b8b43013f88b91fd4
+  eventID: 130275037
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  multiPositionTypeLabel: 0
+  multiPositionArray: []
 --- !u!212 &212069205905827826
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E5C89338-4BF8-46AF-BFE9-867F1E4E10AC}'
-    m_lastTimePsrt1: 353505658
-    m_lastTimePart2: -1999326643
+    m_lastTimePsrt1: 316935624
+    m_lastTimePart2: -1999326627
     List:
     - Name: Amb_Level_01
       Path: Default Work Unit\Amb\Amb_Level_01
@@ -91,17 +91,41 @@ MonoBehaviour:
       ID: -935812117
       Guid: facfe1eb366b644eb5c7b4d0f4cbe4bc
       maxAttenuation: 0
-    - Name: Mus_Level
-      Path: Default Work Unit\Music\Mus_Level
+    - Name: Mus_Level1
+      Path: Default Work Unit\Music\Mus_Level1
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Music
         ObjectType: 4
-      - ElementName: Mus_Level
+      - ElementName: Mus_Level1
         ObjectType: 3
-      ID: -433303855
+      ID: 683676466
       Guid: 745cff7672e5ca45b2f194b149dbc1c9
+      maxAttenuation: 0
+    - Name: Mus_Level2
+      Path: Default Work Unit\Music\Mus_Level2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Mus_Level2
+        ObjectType: 3
+      ID: 683676465
+      Guid: 35aefca4d826b94798d9c7227c69c467
+      maxAttenuation: 0
+    - Name: Mus_Level3
+      Path: Default Work Unit\Music\Mus_Level3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Mus_Level3
+        ObjectType: 3
+      ID: 683676464
+      Guid: c8790d90b663fc46944cbf670db4a2b0
       maxAttenuation: 0
     - Name: Mus_Menu
       Path: Default Work Unit\Music\Mus_Menu
@@ -126,7 +150,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1246412331
       Guid: 679696b4b8abe441a9db92839d6b57a9
-      maxAttenuation: 0
+      maxAttenuation: 20
     - Name: Pigeon_Fly_01
       Path: Default Work Unit\Amb\Pigeon_Fly_01
       PathAndIcons:
@@ -263,15 +287,15 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E8414EFE-46B4-4579-9202-D8668E7A9DF4}'
-    m_lastTimePsrt1: -1484062207
-    m_lastTimePart2: -1999326792
+    m_lastTimePsrt1: 757660105
+    m_lastTimePart2: -1999327366
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A5D891E6-E439-4D25-A338-8045C65F8EEA}'
-    m_lastTimePsrt1: -1469371367
-    m_lastTimePart2: -1999326792
+    m_lastTimePsrt1: 760504799
+    m_lastTimePart2: -1999327366
     List:
     - Name: Walk
       Path: Default Work Unit\Walk
@@ -302,15 +326,15 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{CC0A5BAA-C7B2-480E-87E8-B991437CDCD3}'
-    m_lastTimePsrt1: -1469361366
-    m_lastTimePart2: -1999326792
+    m_lastTimePsrt1: 760509814
+    m_lastTimePart2: -1999327366
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{34410B1E-FD5F-4F95-8FC4-A20C40663309}'
-    m_lastTimePsrt1: -1469401368
-    m_lastTimePart2: -1999326792
+    m_lastTimePsrt1: 760494764
+    m_lastTimePart2: -1999327366
     List:
     - Name: ALL
       Path: Default Work Unit\ALL
@@ -325,7 +349,7 @@ MonoBehaviour:
   - /GameJamBattle2017_WwiseProject
   - /GameJamBattle2017_WwiseProject/Events
   - /GameJamBattle2017_WwiseProject/Events/Default Work Unit
-  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/UI
+  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Amb
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

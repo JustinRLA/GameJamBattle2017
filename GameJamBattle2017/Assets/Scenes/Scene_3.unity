@@ -1541,6 +1541,8 @@ GameObject:
   - component: {fileID: 840840288}
   - component: {fileID: 840840287}
   - component: {fileID: 840840286}
+  - component: {fileID: 840840290}
+  - component: {fileID: 840840289}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1591,6 +1593,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &840840289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840840285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5906ee0487c09489ee1a72e6b264b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: c8790d90b663fc46944cbf670db4a2b0
+  eventID: 683676464
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  multiPositionTypeLabel: 0
+  multiPositionArray: []
+--- !u!114 &840840290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840840285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e141a07dfd04b574fa875c649158b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
 --- !u!1001 &860616072
 Prefab:
   m_ObjectHideFlags: 0
@@ -2730,26 +2774,6 @@ Prefab:
     - target: {fileID: 1423103160814682, guid: faae97b0c8eb50b4789600e92611fa20, type: 2}
       propertyPath: m_Name
       value: PlatformMobile (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114639363769968194, guid: faae97b0c8eb50b4789600e92611fa20,
-        type: 2}
-      propertyPath: verticalMove
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114639363769968194, guid: faae97b0c8eb50b4789600e92611fa20,
-        type: 2}
-      propertyPath: verticalLength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114639363769968194, guid: faae97b0c8eb50b4789600e92611fa20,
-        type: 2}
-      propertyPath: horizontalMove
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114639363769968194, guid: faae97b0c8eb50b4789600e92611fa20,
-        type: 2}
-      propertyPath: horizontalLength
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: faae97b0c8eb50b4789600e92611fa20, type: 2}

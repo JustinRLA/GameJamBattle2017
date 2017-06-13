@@ -23,15 +23,19 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Mus_Level" ID="{76FF5C74-E572-45CA-B2F1-94B149DBC1C9}">
+						<Event Name="Mus_Level1" ID="{76FF5C74-E572-45CA-B2F1-94B149DBC1C9}">
 							<ChildrenList>
-								<Action Name="Play" ID="{FC7DE615-D03A-46E5-B68D-BFE5D8052EFC}" ShortID="763151836" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
+								<Action Name="Stop" ID="{616550D9-0441-4F83-9CA5-8C9BF2D5262F}" ShortID="968650162" Type="Stop" Scope="One" Global="true">
 									<ElementList>
-										<Element ID="{69005B79-E1DF-46B0-89E9-AA6B6C8F072E}" Global="false">
-											<ObjectRef Name="Mus_Level_01" ID="{A53ED61B-0098-4511-89C5-68D2F410F30A}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										<Element ID="{252A4DB0-D841-4380-AE3D-DD1813DDE4B3}" Global="true">
+											<ObjectRef Name="Mus_Level_02" ID="{FE9970E4-2C31-47A8-8FB7-8810E1CAD9EF}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{48FD8392-F9AC-40AC-A24E-F898A0698465}" ShortID="875063914" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{21714E49-5C60-4AFF-9AC0-BD9D26D27263}" Global="true">
+											<ObjectRef Name="Mus_Level_03" ID="{A3C072E1-D802-4E1F-92D4-5709B05B0BB9}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -42,6 +46,86 @@
 									<ElementList>
 										<Element ID="{BAF694A6-22A9-414F-B0E9-E04A0E371E44}" Global="true">
 											<ObjectRef Name="Mus_Menu_01" ID="{FB165091-E30C-4436-A4DE-A3BE594FF2B0}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{FC7DE615-D03A-46E5-B68D-BFE5D8052EFC}" ShortID="763151836" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{69005B79-E1DF-46B0-89E9-AA6B6C8F072E}" Global="false">
+											<ObjectRef Name="Mus_Level_01" ID="{A53ED61B-0098-4511-89C5-68D2F410F30A}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Mus_Level2" ID="{A4FCAE35-26D8-47B9-98D9-C7227C69C467}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{87102D3C-95B2-4D0F-BB08-7EEF0F124475}" ShortID="992478681" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{3B87B077-0CDF-4D21-833E-E1E14BEFF616}" Global="true">
+											<ObjectRef Name="Mus_Menu_01" ID="{FB165091-E30C-4436-A4DE-A3BE594FF2B0}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{7716DBC1-F543-4DE7-BC85-96F78E4EE05E}" ShortID="806108340" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{954FB69A-487F-439F-B2AD-33232D93EF8C}" Global="true">
+											<ObjectRef Name="Mus_Level_01" ID="{A53ED61B-0098-4511-89C5-68D2F410F30A}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{8AA78F66-D349-44FE-A334-018B9FB03E57}" ShortID="597481017" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{16D6C50C-FB77-46AA-A6CD-219EF7AA7F4A}" Global="true">
+											<ObjectRef Name="Mus_Level_03" ID="{A3C072E1-D802-4E1F-92D4-5709B05B0BB9}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{3214D6CD-A2B6-41E1-820C-6BB41DB70D44}" ShortID="995222227" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{24ECF87E-C4A0-4E64-8079-0892C3A1B16B}" Global="false">
+											<ObjectRef Name="Mus_Level_02" ID="{FE9970E4-2C31-47A8-8FB7-8810E1CAD9EF}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Mus_Level3" ID="{900D79C8-63B6-46FC-944C-BF670DB4A2B0}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{6938C18C-78B2-4837-A1A9-D91CBC15BAC2}" ShortID="201664103" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{639892FA-E9CE-41AC-84D5-5342E90C1456}" Global="true">
+											<ObjectRef Name="Mus_Level_01" ID="{A53ED61B-0098-4511-89C5-68D2F410F30A}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{A53888EC-1F93-403A-B16B-8527CDF0A2DB}" ShortID="812731641" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E06C6ECA-592F-42F2-AD67-ED3A9C890092}" Global="true">
+											<ObjectRef Name="Mus_Menu_01" ID="{FB165091-E30C-4436-A4DE-A3BE594FF2B0}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{86407186-CF06-4939-BF12-F88952935C82}" ShortID="678470899" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{1A725930-15C9-4F48-A472-261DE598A3A7}" Global="true">
+											<ObjectRef Name="Mus_Level_02" ID="{FE9970E4-2C31-47A8-8FB7-8810E1CAD9EF}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{872F6AB0-6BFF-45B9-BA38-6D7719722E1E}" ShortID="305151229" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E754E08F-C726-4803-A12E-E6B33926A081}" Global="false">
+											<ObjectRef Name="Mus_Level_03" ID="{A3C072E1-D802-4E1F-92D4-5709B05B0BB9}" WorkUnitID="{125EC56A-8516-41E6-9D03-8E536C27B119}"/>
 										</Element>
 									</ElementList>
 								</Action>
