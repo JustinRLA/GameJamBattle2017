@@ -37,14 +37,7 @@ using UnityEngine.SceneManagement;
         public GameObject cableObject;      // The cable the player is currently interacting with.
         public GameObject lightObject;      // The light the player is currently interacting with.
         public Animator animator;
-
-        public AudioSource[] sounds;
-        public AudioSource jumpSound;
-        public AudioSource landSound;
-        public AudioSource shockSound;
-        public AudioSource cablePullSound;
-        public AudioSource cableStretchSound;
-        public AudioSource cableSnapSound;
+    
 
         private void Awake()
         {
@@ -55,13 +48,6 @@ using UnityEngine.SceneManagement;
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
 
-            sounds = GetComponents<AudioSource>();
-            jumpSound = sounds[0];
-            landSound = sounds[1];
-            shockSound = sounds[2];
-            cablePullSound = sounds[3];
-            cableStretchSound = sounds[4];
-            cableSnapSound = sounds[5];
     }
 
 
@@ -155,21 +141,20 @@ using UnityEngine.SceneManagement;
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
                 //Debug.Log("jump");
                 //aSource.PlayOneShot(aSource.clip);
-                jumpSound.Play();
                 AkSoundEngine.PostEvent("Denis_Jump", gameObject);
         }
 
             //Cable Sound Controls
+            //Cable retract slowly sound
             if (isHoldingCable && !stretched)
             {
-                cableStretchSound.Stop();
-                cablePullSound.Play();
-            }
+            AkSoundEngine.PostEvent("Wire_Back", gameObject);
+        }
+            //Stretch sound
             else if (isHoldingCable && stretched)
             {
-                cablePullSound.Stop();
-                cableStretchSound.Play();
-            }
+            AkSoundEngine.PostEvent("Wire_Stretch", gameObject);
+        }
 
             //If the player is stretching the cable...
             if (stretched)
@@ -200,9 +185,7 @@ using UnityEngine.SceneManagement;
         {
             // Release the cable
             //Debug.Log("Releasing Cable");
-            cablePullSound.Stop();
-            cableStretchSound.Stop();
-            cableSnapSound.Play();
+            AkSoundEngine.PostEvent("Wire_Back", gameObject);
             animator.SetTrigger("Startled");
             cableObject.GetComponent<Wire>().IsHeld = false;
             isHoldingCable = false;
@@ -217,7 +200,8 @@ using UnityEngine.SceneManagement;
             cableObject.GetComponent<Wire>().IsHeld = true;
             cableObject.GetComponent<Renderer>().material.color = Color.green;
             isHoldingCable = true;
-        }
+            AkSoundEngine.PostEvent("Wire_Take", gameObject);
+    }
 
         public void AttachCable()
         {
@@ -231,6 +215,7 @@ using UnityEngine.SceneManagement;
             cableObject.GetComponent<Wire>().targetPosition = lightObject.transform.position;
             cableObject.GetComponent<Renderer>().material.color = Color.blue;
             isHoldingCable = false;
+            AkSoundEngine.PostEvent("Light_Connected", gameObject);
             m_MaxSpeed = 10f;  // Reset to standard
             stretched = false; // Reset to standard
         }
@@ -258,8 +243,9 @@ using UnityEngine.SceneManagement;
             //Danger
             else if (col.gameObject.tag == "Danger" && isHoldingCable)
             {
-                shockSound.Play();
-                ReleaseCable();
+            //Player gets electrocuted
+            AkSoundEngine.PostEvent("Denis_Electric", gameObject);
+            ReleaseCable();
             }
         }
 

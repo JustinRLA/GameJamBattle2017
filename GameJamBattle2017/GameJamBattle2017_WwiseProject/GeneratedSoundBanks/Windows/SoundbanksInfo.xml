@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Viel's machine\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\GameJamBattle2017\GameJamBattle2017\GameJamBattle2017_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -17,25 +17,25 @@
 			<Path>ALL.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2894026586" Name="Amb_Level_01" ObjectPath="\Events\Default Work Unit\Amb\Amb_Level_01"/>
-				<Event Id="4194456506" Name="Denis_Electric_01" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Electric_01"/>
+				<Event Id="1015477524" Name="Denis_Electric" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Electric"/>
 				<Event Id="2741272089" Name="Denis_Jump" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Jump"/>
-				<Event Id="1122608996" Name="Denis_Land_01" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Land_01"/>
+				<Event Id="2808565782" Name="Denis_Land" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Land"/>
 				<Event Id="2579127662" Name="Denis_Walk" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Walk"/>
 				<Event Id="3359155179" Name="Light_Connected" ObjectPath="\Events\Default Work Unit\Wire\Light_Connected"/>
-				<Event Id="515498461" Name="Mus_Level_01" ObjectPath="\Events\Default Work Unit\Music\Mus_Level_01"/>
-				<Event Id="4234731666" Name="Mus_Menu_01" ObjectPath="\Events\Default Work Unit\Music\Mus_Menu_01"/>
+				<Event Id="3861663441" Name="Mus_Level" ObjectPath="\Events\Default Work Unit\Music\Mus_Level"/>
+				<Event Id="3149643052" Name="Mus_Menu" ObjectPath="\Events\Default Work Unit\Music\Mus_Menu"/>
 				<Event Id="3048554965" Name="Pigeon_Chatter_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Chatter_01"/>
 				<Event Id="120299665" Name="Pigeon_Fly_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Fly_01"/>
 				<Event Id="130275037" Name="Platform_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Platform_Loop_01"/>
 				<Event Id="733923149" Name="Power_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Power_Loop_01"/>
-				<Event Id="3356300706" Name="UI_Cancel_01" ObjectPath="\Events\Default Work Unit\UI\UI_Cancel_01"/>
-				<Event Id="347377382" Name="UI_Hover_01" ObjectPath="\Events\Default Work Unit\UI\UI_Hover_01"/>
-				<Event Id="591949760" Name="UI_Select_01" ObjectPath="\Events\Default Work Unit\UI\UI_Select_01"/>
-				<Event Id="2254469782" Name="Wire_Back_01" ObjectPath="\Events\Default Work Unit\Wire\Wire_Back_01"/>
-				<Event Id="106057874" Name="Wire_Rewind_01" ObjectPath="\Events\Default Work Unit\Wire\Wire_Rewind_01"/>
-				<Event Id="2513369922" Name="Wire_Stretch_01" ObjectPath="\Events\Default Work Unit\Wire\Wire_Stretch_01"/>
+				<Event Id="3083016892" Name="UI_Cancel" ObjectPath="\Events\Default Work Unit\UI\UI_Cancel"/>
+				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Default Work Unit\UI\UI_Hover"/>
+				<Event Id="2774129122" Name="UI_Select" ObjectPath="\Events\Default Work Unit\UI\UI_Select"/>
+				<Event Id="1235916320" Name="Wire_Back" ObjectPath="\Events\Default Work Unit\Wire\Wire_Back"/>
+				<Event Id="35786028" Name="Wire_Rewind" ObjectPath="\Events\Default Work Unit\Wire\Wire_Rewind"/>
+				<Event Id="3605757084" Name="Wire_Stretch" ObjectPath="\Events\Default Work Unit\Wire\Wire_Stretch"/>
 				<Event Id="3051451975" Name="Wire_Stuck" ObjectPath="\Events\Default Work Unit\Wire\Wire_Stuck"/>
-				<Event Id="3184674562" Name="Wire_Take_01" ObjectPath="\Events\Default Work Unit\Wire\Wire_Take_01"/>
+				<Event Id="2605487452" Name="Wire_Take" ObjectPath="\Events\Default Work Unit\Wire\Wire_Take"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="57509976" Language="SFX">

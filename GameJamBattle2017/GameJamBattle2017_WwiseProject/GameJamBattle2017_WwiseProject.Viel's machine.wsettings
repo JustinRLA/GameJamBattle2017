@@ -121,7 +121,7 @@
 				<List Name="BatchRenameSettings">
 					<PluginInnerObject Name="" ID="{896152E2-CCF0-465E-A737-7041845FA346}" PluginName="BatchRenameSettings" CompanyID="0" PluginID="992">
 						<PropertyList>
-							<Property Name="ReplaceFindWhat" Type="string" Value="Play_"/>
+							<Property Name="ReplaceFindWhat" Type="string" Value="_01"/>
 						</PropertyList>
 					</PluginInnerObject>
 				</List>

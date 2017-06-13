@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E5C89338-4BF8-46AF-BFE9-867F1E4E10AC}'
-    m_lastTimePsrt1: -1487032377
-    m_lastTimePart2: -1999326792
+    m_lastTimePsrt1: 353505658
+    m_lastTimePart2: -1999326643
     List:
     - Name: Amb_Level_01
       Path: Default Work Unit\Amb\Amb_Level_01
@@ -31,16 +31,16 @@ MonoBehaviour:
       ID: -1400940710
       Guid: 80522e2fcf70c94894aa5ae92a6f6c31
       maxAttenuation: 0
-    - Name: Denis_Electric_01
-      Path: Default Work Unit\Avatar\Denis_Electric_01
+    - Name: Denis_Electric
+      Path: Default Work Unit\Avatar\Denis_Electric
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Avatar
         ObjectType: 4
-      - ElementName: Denis_Electric_01
+      - ElementName: Denis_Electric
         ObjectType: 3
-      ID: -100510790
+      ID: 1015477524
       Guid: 48b6e6a429e7364ea55a6b771be9c19e
       maxAttenuation: 0
     - Name: Denis_Jump
@@ -55,16 +55,16 @@ MonoBehaviour:
       ID: -1553695207
       Guid: 846be4400587d94fb9fe601dc4f1bd56
       maxAttenuation: 0
-    - Name: Denis_Land_01
-      Path: Default Work Unit\Avatar\Denis_Land_01
+    - Name: Denis_Land
+      Path: Default Work Unit\Avatar\Denis_Land
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Avatar
         ObjectType: 4
-      - ElementName: Denis_Land_01
+      - ElementName: Denis_Land
         ObjectType: 3
-      ID: 1122608996
+      ID: -1486401514
       Guid: 0fb959127753014fb6489809012cc545
       maxAttenuation: 0
     - Name: Denis_Walk
@@ -91,28 +91,28 @@ MonoBehaviour:
       ID: -935812117
       Guid: facfe1eb366b644eb5c7b4d0f4cbe4bc
       maxAttenuation: 0
-    - Name: Mus_Level_01
-      Path: Default Work Unit\Music\Mus_Level_01
+    - Name: Mus_Level
+      Path: Default Work Unit\Music\Mus_Level
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Music
         ObjectType: 4
-      - ElementName: Mus_Level_01
+      - ElementName: Mus_Level
         ObjectType: 3
-      ID: 515498461
+      ID: -433303855
       Guid: 745cff7672e5ca45b2f194b149dbc1c9
       maxAttenuation: 0
-    - Name: Mus_Menu_01
-      Path: Default Work Unit\Music\Mus_Menu_01
+    - Name: Mus_Menu
+      Path: Default Work Unit\Music\Mus_Menu
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Music
         ObjectType: 4
-      - ElementName: Mus_Menu_01
+      - ElementName: Mus_Menu
         ObjectType: 3
-      ID: -60235630
+      ID: -1145324244
       Guid: 74c47908f2e6ca45a707b0ed32a57b38
       maxAttenuation: 0
     - Name: Pigeon_Chatter_01
@@ -163,76 +163,76 @@ MonoBehaviour:
       ID: 733923149
       Guid: 1f01cfea7530374b83dbea7939f12880
       maxAttenuation: 0
-    - Name: UI_Cancel_01
-      Path: Default Work Unit\UI\UI_Cancel_01
+    - Name: UI_Cancel
+      Path: Default Work Unit\UI\UI_Cancel
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: UI
         ObjectType: 4
-      - ElementName: UI_Cancel_01
+      - ElementName: UI_Cancel
         ObjectType: 3
-      ID: -938666590
+      ID: -1211950404
       Guid: 68ca6a7e8b97ef4bb4a5a50dbeb9b506
       maxAttenuation: 0
-    - Name: UI_Hover_01
-      Path: Default Work Unit\UI\UI_Hover_01
+    - Name: UI_Hover
+      Path: Default Work Unit\UI\UI_Hover
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: UI
         ObjectType: 4
-      - ElementName: UI_Hover_01
+      - ElementName: UI_Hover
         ObjectType: 3
-      ID: 347377382
+      ID: 2118900976
       Guid: 3db25550fb23c64f9a533b7fab156714
       maxAttenuation: 0
-    - Name: UI_Select_01
-      Path: Default Work Unit\UI\UI_Select_01
+    - Name: UI_Select
+      Path: Default Work Unit\UI\UI_Select
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: UI
         ObjectType: 4
-      - ElementName: UI_Select_01
+      - ElementName: UI_Select
         ObjectType: 3
-      ID: 591949760
+      ID: -1520838174
       Guid: 1c65c39283feb34e82f7de5311287375
       maxAttenuation: 0
-    - Name: Wire_Back_01
-      Path: Default Work Unit\Wire\Wire_Back_01
+    - Name: Wire_Back
+      Path: Default Work Unit\Wire\Wire_Back
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Wire
         ObjectType: 4
-      - ElementName: Wire_Back_01
+      - ElementName: Wire_Back
         ObjectType: 3
-      ID: -2040497514
+      ID: 1235916320
       Guid: a8fcffa783319941b106a29e7b0c57f3
       maxAttenuation: 0
-    - Name: Wire_Rewind_01
-      Path: Default Work Unit\Wire\Wire_Rewind_01
+    - Name: Wire_Rewind
+      Path: Default Work Unit\Wire\Wire_Rewind
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Wire
         ObjectType: 4
-      - ElementName: Wire_Rewind_01
+      - ElementName: Wire_Rewind
         ObjectType: 3
-      ID: 106057874
+      ID: 35786028
       Guid: 0a63ff5e4732074ba0cb7b62892e2e0b
       maxAttenuation: 0
-    - Name: Wire_Stretch_01
-      Path: Default Work Unit\Wire\Wire_Stretch_01
+    - Name: Wire_Stretch
+      Path: Default Work Unit\Wire\Wire_Stretch
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Wire
         ObjectType: 4
-      - ElementName: Wire_Stretch_01
+      - ElementName: Wire_Stretch
         ObjectType: 3
-      ID: -1781597374
+      ID: -689210212
       Guid: 8dcc772c6376d5408de7e5e0e7c7ea04
       maxAttenuation: 0
     - Name: Wire_Stuck
@@ -247,16 +247,16 @@ MonoBehaviour:
       ID: -1243515321
       Guid: 06e23a7c3c067e459ad2c4ad55844c8a
       maxAttenuation: 0
-    - Name: Wire_Take_01
-      Path: Default Work Unit\Wire\Wire_Take_01
+    - Name: Wire_Take
+      Path: Default Work Unit\Wire\Wire_Take
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Wire
         ObjectType: 4
-      - ElementName: Wire_Take_01
+      - ElementName: Wire_Take
         ObjectType: 3
-      ID: -1110292734
+      ID: -1689479844
       Guid: d613f6c807c0b843915633daa1b61950
       maxAttenuation: 0
   AuxBusWwu:
@@ -326,6 +326,7 @@ MonoBehaviour:
   - /GameJamBattle2017_WwiseProject/Events
   - /GameJamBattle2017_WwiseProject/Events/Default Work Unit
   - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Avatar
+  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Wire
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

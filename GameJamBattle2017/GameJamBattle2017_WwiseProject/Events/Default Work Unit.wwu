@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Music" ID="{C2443761-EA83-4F4F-9BDB-80C0FE378FA0}" ShortID="586488960">
 					<ChildrenList>
-						<Event Name="Mus_Menu_01" ID="{0879C474-E6F2-45CA-A707-B0ED32A57B38}">
+						<Event Name="Mus_Menu" ID="{0879C474-E6F2-45CA-A707-B0ED32A57B38}">
 							<ChildrenList>
 								<Action Name="Play" ID="{5244A6B7-FD88-46B1-86B7-84080DB8B6BB}" ShortID="928572079" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -23,7 +23,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Mus_Level_01" ID="{76FF5C74-E572-45CA-B2F1-94B149DBC1C9}">
+						<Event Name="Mus_Level" ID="{76FF5C74-E572-45CA-B2F1-94B149DBC1C9}">
 							<ChildrenList>
 								<Action Name="Play" ID="{FC7DE615-D03A-46E5-B68D-BFE5D8052EFC}" ShortID="763151836" Type="Play" Scope="One" Global="false">
 									<PropertyList>
@@ -51,7 +51,7 @@
 				</Folder>
 				<Folder Name="Wire" ID="{83B47CDD-A6E8-4B83-9571-31D12A35D7B8}" ShortID="47618280">
 					<ChildrenList>
-						<Event Name="Wire_Stretch_01" ID="{2C77CC8D-7663-40D5-8DE7-E5E0E7C7EA04}">
+						<Event Name="Wire_Stretch" ID="{2C77CC8D-7663-40D5-8DE7-E5E0E7C7EA04}">
 							<ChildrenList>
 								<Action Name="Play" ID="{71B4BB24-0B2C-4DFD-A6D7-B9A6EA11544C}" ShortID="572153901" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -76,7 +76,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Wire_Rewind_01" ID="{5EFF630A-3247-4B07-A0CB-7B62892E2E0B}">
+						<Event Name="Wire_Rewind" ID="{5EFF630A-3247-4B07-A0CB-7B62892E2E0B}">
 							<ChildrenList>
 								<Action Name="Play" ID="{B0976FE8-351E-44DF-8E8F-24F0E416618C}" ShortID="473949949" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -144,7 +144,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Wire_Take_01" ID="{C8F613D6-C007-43B8-9156-33DAA1B61950}">
+						<Event Name="Wire_Take" ID="{C8F613D6-C007-43B8-9156-33DAA1B61950}">
 							<ChildrenList>
 								<Action Name="Play" ID="{EA8634FA-3E4E-4368-AF61-30B298FEE62B}" ShortID="635851948" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -155,7 +155,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Wire_Back_01" ID="{A7FFFCA8-3183-4199-B106-A29E7B0C57F3}">
+						<Event Name="Wire_Back" ID="{A7FFFCA8-3183-4199-B106-A29E7B0C57F3}">
 							<ChildrenList>
 								<Action Name="Play" ID="{A1EE5636-BA9F-4850-99EA-DC82DE3A69E6}" ShortID="1029021521" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -184,7 +184,7 @@
 				</Folder>
 				<Folder Name="UI" ID="{12D8B0B7-4239-4367-885D-590CD0BF6E10}" ShortID="533134074">
 					<ChildrenList>
-						<Event Name="UI_Cancel_01" ID="{7E6ACA68-978B-4BEF-B4A5-A50DBEB9B506}">
+						<Event Name="UI_Cancel" ID="{7E6ACA68-978B-4BEF-B4A5-A50DBEB9B506}">
 							<ChildrenList>
 								<Action Name="Play" ID="{4C5306FA-CF6E-4AD2-ACBA-9168DED5B25A}" ShortID="97519243" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -195,7 +195,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="UI_Hover_01" ID="{5055B23D-23FB-4FC6-9A53-3B7FAB156714}">
+						<Event Name="UI_Hover" ID="{5055B23D-23FB-4FC6-9A53-3B7FAB156714}">
 							<ChildrenList>
 								<Action Name="Play" ID="{985C5EAA-8C8E-487B-971E-B5BAEE621912}" ShortID="274100687" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -206,7 +206,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="UI_Select_01" ID="{92C3651C-FE83-4EB3-82F7-DE5311287375}">
+						<Event Name="UI_Select" ID="{92C3651C-FE83-4EB3-82F7-DE5311287375}">
 							<ChildrenList>
 								<Action Name="Play" ID="{17666CCB-A8EF-4654-89DA-68D5781B7D63}" ShortID="893379465" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -221,7 +221,7 @@
 				</Folder>
 				<Folder Name="Avatar" ID="{9B763576-1738-4018-8775-A882E555AFE3}" ShortID="99356857">
 					<ChildrenList>
-						<Event Name="Denis_Electric_01" ID="{A4E6B648-E729-4E36-A55A-6B771BE9C19E}">
+						<Event Name="Denis_Electric" ID="{A4E6B648-E729-4E36-A55A-6B771BE9C19E}">
 							<ChildrenList>
 								<Action Name="Play" ID="{14BA03C6-F2B0-4FFF-8064-4E70485B631C}" ShortID="105818014" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -254,7 +254,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Denis_Land_01" ID="{1259B90F-5377-4F01-B648-9809012CC545}">
+						<Event Name="Denis_Land" ID="{1259B90F-5377-4F01-B648-9809012CC545}">
 							<ChildrenList>
 								<Action Name="Play" ID="{E99C78B6-3B77-4B33-8517-56459790E019}" ShortID="346257152" Type="Play" Scope="One" Global="false">
 									<ElementList>
