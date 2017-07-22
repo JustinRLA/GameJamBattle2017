@@ -329,10 +329,10 @@
 						</Event>
 						<Event Name="Denis_Walk" ID="{633E9017-EF94-4CF6-ABAF-9D65CF93519A}">
 							<ChildrenList>
-								<Action Name="Play" ID="{8801EF73-5179-4E0C-9869-CC20B2714EF8}" ShortID="480434708" Type="Play" Scope="One" Global="false">
+								<Action Name="Play" ID="{94674C63-4D80-4025-8443-8B2FB9AD8EC6}" ShortID="769168295" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{0A2C0F4F-DE8F-4279-9DF2-8C5400AD8B54}" Global="false">
-											<ObjectRef Name="Denis_Walk" ID="{21CB2FB4-8610-40D0-A852-9F93E4B9E714}" WorkUnitID="{891C468D-381F-4815-AF88-79E40BC0C392}"/>
+										<Element ID="{660FC51B-A244-4F70-BCAD-1CF528F3D350}" Global="false">
+											<ObjectRef Name="Denis_Walk" ID="{AECD2A92-369A-4219-B0F1-D38888679DBD}" WorkUnitID="{891C468D-381F-4815-AF88-79E40BC0C392}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -340,10 +340,20 @@
 						</Event>
 						<Event Name="Denis_Land" ID="{1259B90F-5377-4F01-B648-9809012CC545}">
 							<ChildrenList>
-								<Action Name="Play" ID="{E99C78B6-3B77-4B33-8517-56459790E019}" ShortID="346257152" Type="Play" Scope="One" Global="false">
+								<Action Name="Play" ID="{DE29CB4E-ACEC-4CCA-A34A-3BA5A41707F7}" ShortID="520141806" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{810BECAC-9903-4669-9017-6258F843C6B9}" Global="false">
-											<ObjectRef Name="Denis_Land_01" ID="{85754A8B-0746-4F41-A6C1-852A4CFAD427}" WorkUnitID="{891C468D-381F-4815-AF88-79E40BC0C392}"/>
+										<Element ID="{BAE315BD-9C80-4C37-8A6B-271C4BDEF3BC}" Global="false">
+											<ObjectRef Name="Denis_Walk" ID="{21CB2FB4-8610-40D0-A852-9F93E4B9E714}" WorkUnitID="{891C468D-381F-4815-AF88-79E40BC0C392}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{DAB9B0A6-7D55-43BD-80DD-8E8339585CB6}" ShortID="309820370" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.05"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{594B1A38-368E-4B12-A7C6-49171A21C4A8}" Global="false">
+											<ObjectRef Name="Denis_Walk" ID="{21CB2FB4-8610-40D0-A852-9F93E4B9E714}" WorkUnitID="{891C468D-381F-4815-AF88-79E40BC0C392}"/>
 										</Element>
 									</ElementList>
 								</Action>

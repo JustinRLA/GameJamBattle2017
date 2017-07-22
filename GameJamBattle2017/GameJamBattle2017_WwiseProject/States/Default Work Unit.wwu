@@ -10,6 +10,14 @@
 						<State Name="Metal" ID="{185BFE6B-0F10-4DCF-AE9B-1F1147256E10}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Wire_State" ID="{09F772B3-34A6-4CA8-98B9-95ECF8330C63}">
+					<ChildrenList>
+						<State Name="None" ID="{CDE35BC2-2755-4486-B5F4-5CBD803F26C2}"/>
+						<State Name="Stretch" ID="{4C3CCD25-5F27-4EA2-AFBB-F2C2B6AEF904}"/>
+						<State Name="Rewind" ID="{2F95CE94-973B-4019-BB8B-E0B4F6C74BE8}"/>
+						<State Name="Off" ID="{CC811C68-C00E-45C0-926E-CAEC152EF9A2}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

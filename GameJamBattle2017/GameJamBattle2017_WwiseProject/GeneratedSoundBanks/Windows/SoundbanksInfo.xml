@@ -40,6 +40,14 @@
 				<Event Id="2605487452" Name="Wire_Take" ObjectPath="\Events\Default Work Unit\Wire\Wire_Take"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="36651106" Language="SFX">
+					<ShortName>Denis_Walk_Wood_06.wav</ShortName>
+					<Path>SFX\Denis_Walk_Wood_06_6929A334.wem</Path>
+				</File>
+				<File Id="53778227" Language="SFX">
+					<ShortName>Denis_Walk_Wood_01.wav</ShortName>
+					<Path>SFX\Denis_Walk_Wood_01_9E69E797.wem</Path>
+				</File>
 				<File Id="57509976" Language="SFX">
 					<ShortName>Wire_Stuck_01.wav</ShortName>
 					<Path>SFX\Wire_Stuck_01_9E69E797.wem</Path>
@@ -64,6 +72,10 @@
 					<ShortName>Light_Connected_09.wav</ShortName>
 					<Path>SFX\Light_Connected_09_9E69E797.wem</Path>
 				</File>
+				<File Id="166810906" Language="SFX">
+					<ShortName>Denis_Walk_Wood_03.wav</ShortName>
+					<Path>SFX\Denis_Walk_Wood_03_9E69E797.wem</Path>
+				</File>
 				<File Id="173678939" Language="SFX">
 					<ShortName>Denis_Electric_01.wav</ShortName>
 					<Path>SFX\Denis_Electric_01_9E69E797.wem</Path>
@@ -75,6 +87,10 @@
 				<File Id="191626305" Language="SFX">
 					<ShortName>Wire_Rewind_01.wav</ShortName>
 					<Path>SFX\Wire_Rewind_01_9E69E797.wem</Path>
+				</File>
+				<File Id="231671138" Language="SFX">
+					<ShortName>Denis_Walk_Metal_02.wav</ShortName>
+					<Path>SFX\Denis_Walk_Metal_02_4B2492BA.wem</Path>
 				</File>
 				<File Id="264163263" Language="SFX">
 					<ShortName>Wire_Stuck_04.wav</ShortName>
@@ -96,6 +112,10 @@
 					<ShortName>Wire_Stretch_01.wav</ShortName>
 					<Path>SFX\Wire_Stretch_01_9E69E797.wem</Path>
 				</File>
+				<File Id="317245654" Language="SFX">
+					<ShortName>Denis_Walk_Metal_01.wav</ShortName>
+					<Path>SFX\Denis_Walk_Metal_01_9E69E797.wem</Path>
+				</File>
 				<File Id="345673084" Language="SFX">
 					<ShortName>Light_Connected_07.wav</ShortName>
 					<Path>SFX\Light_Connected_07_9E69E797.wem</Path>
@@ -103,10 +123,6 @@
 				<File Id="370157125" Language="SFX">
 					<ShortName>Denis_Jump_03.wav</ShortName>
 					<Path>SFX\Denis_Jump_03_9E69E797.wem</Path>
-				</File>
-				<File Id="393105002" Language="SFX">
-					<ShortName>Denis_Land _01.wav</ShortName>
-					<Path>SFX\Denis_Land _01_9E69E797.wem</Path>
 				</File>
 				<File Id="417172909" Language="SFX">
 					<ShortName>Wire_Stuck_05.wav</ShortName>
@@ -123,6 +139,14 @@
 				<File Id="508620858" Language="SFX">
 					<ShortName>Wire_Back_01.wav</ShortName>
 					<Path>SFX\Wire_Back_01_9E69E797.wem</Path>
+				</File>
+				<File Id="547092713" Language="SFX">
+					<ShortName>Denis_Walk_Metal_03.wav</ShortName>
+					<Path>SFX\Denis_Walk_Metal_03_A1F028C0.wem</Path>
+				</File>
+				<File Id="587705116" Language="SFX">
+					<ShortName>Denis_Walk_Wood_04.wav</ShortName>
+					<Path>SFX\Denis_Walk_Wood_04_9E69E797.wem</Path>
 				</File>
 				<File Id="597783091" Language="SFX">
 					<ShortName>Wire_Take_01.wav</ShortName>
@@ -164,6 +188,14 @@
 					<ShortName>Denis_Jump_01.wav</ShortName>
 					<Path>SFX\Denis_Jump_01_9E69E797.wem</Path>
 				</File>
+				<File Id="883923363" Language="SFX">
+					<ShortName>Denis_Walk_Wood_02.wav</ShortName>
+					<Path>SFX\Denis_Walk_Wood_02_9E69E797.wem</Path>
+				</File>
+				<File Id="937509929" Language="SFX">
+					<ShortName>Denis_Walk_Wood_05.wav</ShortName>
+					<Path>SFX\Denis_Walk_Wood_05_E0A39294.wem</Path>
+				</File>
 				<File Id="941685200" Language="SFX">
 					<ShortName>Wire_Stuck_02.wav</ShortName>
 					<Path>SFX\Wire_Stuck_02_9E69E797.wem</Path>
@@ -172,9 +204,21 @@
 					<ShortName>UI_Select_01.wav</ShortName>
 					<Path>SFX\UI_Select_01_9E69E797.wem</Path>
 				</File>
+				<File Id="959735849" Language="SFX">
+					<ShortName>Denis_Walk_Metal_05.wav</ShortName>
+					<Path>SFX\Denis_Walk_Metal_05_8DB43ED1.wem</Path>
+				</File>
+				<File Id="977690880" Language="SFX">
+					<ShortName>Denis_Walk_Metal_06.wav</ShortName>
+					<Path>SFX\Denis_Walk_Metal_06_111BE41F.wem</Path>
+				</File>
 				<File Id="1040704784" Language="SFX">
 					<ShortName>Light_Connected_10.wav</ShortName>
 					<Path>SFX\Light_Connected_10_9E69E797.wem</Path>
+				</File>
+				<File Id="1060370849" Language="SFX">
+					<ShortName>Denis_Walk_Metal_04.wav</ShortName>
+					<Path>SFX\Denis_Walk_Metal_04_732B15E1.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

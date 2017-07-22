@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E5C89338-4BF8-46AF-BFE9-867F1E4E10AC}'
-    m_lastTimePsrt1: 316935624
-    m_lastTimePart2: -1999326627
+    m_lastTimePsrt1: 764643947
+    m_lastTimePart2: -1999318776
     List:
     - Name: Amb_Level_01
       Path: Default Work Unit\Amb\Amb_Level_01
@@ -294,8 +294,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A5D891E6-E439-4D25-A338-8045C65F8EEA}'
-    m_lastTimePsrt1: 760504799
-    m_lastTimePart2: -1999327366
+    m_lastTimePsrt1: 764684081
+    m_lastTimePart2: -1999318776
     List:
     - Name: Walk
       Path: Default Work Unit\Walk
@@ -322,6 +322,35 @@ MonoBehaviour:
       - bytes: 6bfe5b18100fcf4dae9b1f1147256e10
       - bytes: 8a12aebd873c6542b603302959415320
       - bytes: fea3ab1e09d0ee4aa09bda2c2bd01230
+    - Name: Wire_State
+      Path: Default Work Unit\Wire_State
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Wire_State
+        ObjectType: 9
+      ID: -726660536
+      Guid: b372f709a634a84c98b995ecf8330c63
+      values:
+      - Back
+      - None
+      - Off
+      - Stretch
+      ValueIcons:
+      - ElementName: Back
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Off
+        ObjectType: 8
+      - ElementName: Stretch
+        ObjectType: 8
+      valueIDs: 48cff95cdb3ba32c648a793734e406c1
+      ValueGuids:
+      - bytes: 94ce952f3b971940bb8be0b4f6c74be8
+      - bytes: c25be3cd55278644b5f45cbd803f26c2
+      - bytes: 681c81cc0ec0c045926ecaec152ef9a2
+      - bytes: 25cd3c4c275fa24eafbbf2c2b6aef904
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -350,6 +379,11 @@ MonoBehaviour:
   - /GameJamBattle2017_WwiseProject/Events
   - /GameJamBattle2017_WwiseProject/Events/Default Work Unit
   - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Amb
+  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Avatar
+  - /GameJamBattle2017_WwiseProject/States
+  - /GameJamBattle2017_WwiseProject/States/Default Work Unit
+  - /GameJamBattle2017_WwiseProject/States/Default Work Unit/Walk
+  - /GameJamBattle2017_WwiseProject/States/Default Work Unit/Wire_State
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
