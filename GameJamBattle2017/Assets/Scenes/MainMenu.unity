@@ -119,6 +119,8 @@ GameObject:
   - component: {fileID: 72431793}
   - component: {fileID: 72431792}
   - component: {fileID: 72431791}
+  - component: {fileID: 72431795}
+  - component: {fileID: 72431794}
   m_Layer: 5
   m_Name: CreditsBtn
   m_TagString: Untagged
@@ -241,6 +243,35 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 72431789}
+--- !u!114 &72431794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 72431789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a34e561dd5df05458837e8eb7a4d8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &72431795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 72431789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e141a07dfd04b574fa875c649158b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
 --- !u!1 &290538533
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,10 +804,10 @@ GameObject:
   - component: {fileID: 896964969}
   - component: {fileID: 896964972}
   - component: {fileID: 896964971}
+  - component: {fileID: 896964975}
+  - component: {fileID: 896964976}
   - component: {fileID: 896964970}
   - component: {fileID: 896964973}
-  - component: {fileID: 896964976}
-  - component: {fileID: 896964975}
   - component: {fileID: 896964974}
   m_Layer: 5
   m_Name: PlayBtn
@@ -1400,6 +1431,8 @@ GameObject:
   - component: {fileID: 1134882738}
   - component: {fileID: 1134882737}
   - component: {fileID: 1134882743}
+  - component: {fileID: 1134882742}
+  - component: {fileID: 1134882741}
   m_Layer: 5
   m_Name: InfoBtn
   m_TagString: Untagged
@@ -1522,6 +1555,35 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1134882735}
+--- !u!114 &1134882741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1134882735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a34e561dd5df05458837e8eb7a4d8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1134882742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1134882735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e141a07dfd04b574fa875c649158b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
 --- !u!54 &1134882743
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2182,7 +2244,6 @@ GameObject:
   - component: {fileID: 1532087354}
   - component: {fileID: 1532087357}
   - component: {fileID: 1532087356}
-  - component: {fileID: 1532087355}
   m_Layer: 5
   m_Name: CreditsPanel
   m_TagString: Untagged
@@ -2211,30 +2272,6 @@ RectTransform:
   m_AnchoredPosition: {x: 131.6, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1532087355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1532087353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b5906ee0487c09489ee1a72e6b264b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: ae8d9d44f7e1664c
-  useOtherObject: 0
-  valueGuid: 1c65c39283feb34e82f7de5311287375
-  eventID: -1520838174
-  soundEmitterObject: {fileID: 0}
-  enableActionOnEvent: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  transitionDuration: 0
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  multiPositionTypeLabel: 0
-  multiPositionArray: []
 --- !u!114 &1532087356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,6 +2312,8 @@ GameObject:
   - component: {fileID: 1585315432}
   - component: {fileID: 1585315431}
   - component: {fileID: 1585315430}
+  - component: {fileID: 1585315434}
+  - component: {fileID: 1585315433}
   m_Layer: 5
   m_Name: BackBtn
   m_TagString: Untagged
@@ -2397,6 +2436,35 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1585315428}
+--- !u!114 &1585315433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585315428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e141a07dfd04b574fa875c649158b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
+--- !u!114 &1585315434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585315428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a34e561dd5df05458837e8eb7a4d8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1625425808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,6 +2640,8 @@ GameObject:
   - component: {fileID: 1811705583}
   - component: {fileID: 1811705582}
   - component: {fileID: 1811705581}
+  - component: {fileID: 1811705586}
+  - component: {fileID: 1811705587}
   - component: {fileID: 1811705584}
   - component: {fileID: 1811705585}
   m_Layer: 5
@@ -2711,6 +2781,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1811705586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811705579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e141a07dfd04b574fa875c649158b0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
+--- !u!114 &1811705587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811705579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a34e561dd5df05458837e8eb7a4d8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1815865979
 GameObject:
   m_ObjectHideFlags: 0

@@ -186,7 +186,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 120299665
       Guid: 312244ac8c8e39448a808a1107474b90
-      maxAttenuation: 0
+      maxAttenuation: 20
     - Name: Platform_Loop_01
       Path: Default Work Unit\Amb\Platform_Loop_01
       PathAndIcons:
@@ -419,7 +419,7 @@ MonoBehaviour:
   - /GameJamBattle2017_WwiseProject
   - /GameJamBattle2017_WwiseProject/Events
   - /GameJamBattle2017_WwiseProject/Events/Default Work Unit
-  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Music
+  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/UI
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
