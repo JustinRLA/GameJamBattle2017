@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E5C89338-4BF8-46AF-BFE9-867F1E4E10AC}'
-    m_lastTimePsrt1: 764643947
-    m_lastTimePart2: -1999318776
+    m_lastTimePsrt1: -953542400
+    m_lastTimePart2: -1999318762
     List:
     - Name: Amb_Level_01
       Path: Default Work Unit\Amb\Amb_Level_01
@@ -91,6 +91,18 @@ MonoBehaviour:
       ID: -935812117
       Guid: facfe1eb366b644eb5c7b4d0f4cbe4bc
       maxAttenuation: 0
+    - Name: Mus_GameOver
+      Path: Default Work Unit\Music\Mus_GameOver
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Mus_GameOver
+        ObjectType: 3
+      ID: -604416815
+      Guid: 38b7c67750e1104ab4878d801eb05bf1
+      maxAttenuation: 0
     - Name: Mus_Level1
       Path: Default Work Unit\Music\Mus_Level1
       PathAndIcons:
@@ -138,6 +150,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1145324244
       Guid: 74c47908f2e6ca45a707b0ed32a57b38
+      maxAttenuation: 0
+    - Name: Mus_Win
+      Path: Default Work Unit\Music\Mus_Win
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Mus_Win
+        ObjectType: 3
+      ID: 804414033
+      Guid: 7c737f3267c512449a332d05613da42d
       maxAttenuation: 0
     - Name: Pigeon_Chatter_01
       Path: Default Work Unit\Amb\Pigeon_Chatter_01
@@ -235,30 +259,6 @@ MonoBehaviour:
       ID: 1235916320
       Guid: a8fcffa783319941b106a29e7b0c57f3
       maxAttenuation: 0
-    - Name: Wire_Rewind
-      Path: Default Work Unit\Wire\Wire_Rewind
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Wire
-        ObjectType: 4
-      - ElementName: Wire_Rewind
-        ObjectType: 3
-      ID: 35786028
-      Guid: 0a63ff5e4732074ba0cb7b62892e2e0b
-      maxAttenuation: 0
-    - Name: Wire_Stretch
-      Path: Default Work Unit\Wire\Wire_Stretch
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Wire
-        ObjectType: 4
-      - ElementName: Wire_Stretch
-        ObjectType: 3
-      ID: -689210212
-      Guid: 8dcc772c6376d5408de7e5e0e7c7ea04
-      maxAttenuation: 0
     - Name: Wire_Stuck
       Path: Default Work Unit\Wire\Wire_Stuck
       PathAndIcons:
@@ -294,9 +294,50 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A5D891E6-E439-4D25-A338-8045C65F8EEA}'
-    m_lastTimePsrt1: 764684081
-    m_lastTimePart2: -1999318776
+    m_lastTimePsrt1: -953492234
+    m_lastTimePart2: -1999318762
     List:
+    - Name: Music
+      Path: Default Work Unit\Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 9
+      ID: -303024426
+      Guid: ccba292171940242b71545ab490d2023
+      values:
+      - GameOver
+      - Level_01
+      - Level_02
+      - Level_03
+      - Menu
+      - None
+      - Win
+      ValueIcons:
+      - ElementName: GameOver
+        ObjectType: 8
+      - ElementName: Level_01
+        ObjectType: 8
+      - ElementName: Level_02
+        ObjectType: 8
+      - ElementName: Level_03
+        ObjectType: 8
+      - ElementName: Menu
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Win
+        ObjectType: 8
+      valueIDs: a568daf7a120de3aa220de3aa320de3af0256c9bdb3ba32c6d07663a
+      ValueGuids:
+      - bytes: 90811b254a19d84fb035a7e5204a05a7
+      - bytes: 6d86e7a1806f5d478e576b5e694d2e6e
+      - bytes: 8e504426de96a143bb95f50d4b5d750c
+      - bytes: fa58072fb5ec9a45a74071c9bfd1c586
+      - bytes: 7b87e21944f08c449f0b941074af518f
+      - bytes: 2b0b24c2bb075a4f85698ad17b6f1088
+      - bytes: e7710c6960f7f4408a63bcec98317d89
     - Name: Walk
       Path: Default Work Unit\Walk
       PathAndIcons:
@@ -332,24 +373,24 @@ MonoBehaviour:
       ID: -726660536
       Guid: b372f709a634a84c98b995ecf8330c63
       values:
-      - Back
       - None
       - Off
+      - Rewind
       - Stretch
       ValueIcons:
-      - ElementName: Back
-        ObjectType: 8
       - ElementName: None
         ObjectType: 8
       - ElementName: Off
         ObjectType: 8
+      - ElementName: Rewind
+        ObjectType: 8
       - ElementName: Stretch
         ObjectType: 8
-      valueIDs: 48cff95cdb3ba32c648a793734e406c1
+      valueIDs: db3ba32c648a793744a0b96334e406c1
       ValueGuids:
-      - bytes: 94ce952f3b971940bb8be0b4f6c74be8
       - bytes: c25be3cd55278644b5f45cbd803f26c2
       - bytes: 681c81cc0ec0c045926ecaec152ef9a2
+      - bytes: 94ce952f3b971940bb8be0b4f6c74be8
       - bytes: 25cd3c4c275fa24eafbbf2c2b6aef904
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -378,12 +419,7 @@ MonoBehaviour:
   - /GameJamBattle2017_WwiseProject
   - /GameJamBattle2017_WwiseProject/Events
   - /GameJamBattle2017_WwiseProject/Events/Default Work Unit
-  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Amb
-  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Avatar
-  - /GameJamBattle2017_WwiseProject/States
-  - /GameJamBattle2017_WwiseProject/States/Default Work Unit
-  - /GameJamBattle2017_WwiseProject/States/Default Work Unit/Walk
-  - /GameJamBattle2017_WwiseProject/States/Default Work Unit/Wire_State
+  - /GameJamBattle2017_WwiseProject/Events/Default Work Unit/Music
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
