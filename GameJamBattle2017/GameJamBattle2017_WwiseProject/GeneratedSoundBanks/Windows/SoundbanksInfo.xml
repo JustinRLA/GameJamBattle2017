@@ -22,10 +22,12 @@
 				<Event Id="2808565782" Name="Denis_Land" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Land"/>
 				<Event Id="2579127662" Name="Denis_Walk" ObjectPath="\Events\Default Work Unit\Avatar\Denis_Walk"/>
 				<Event Id="3359155179" Name="Light_Connected" ObjectPath="\Events\Default Work Unit\Wire\Light_Connected"/>
-				<Event Id="683676466" Name="Mus_Level1" ObjectPath="\Events\Default Work Unit\Music\Mus_Level1"/>
-				<Event Id="683676465" Name="Mus_Level2" ObjectPath="\Events\Default Work Unit\Music\Mus_Level2"/>
-				<Event Id="683676464" Name="Mus_Level3" ObjectPath="\Events\Default Work Unit\Music\Mus_Level3"/>
+				<Event Id="3690550481" Name="Mus_GameOver" ObjectPath="\Events\Default Work Unit\Music\Mus_GameOver" MaxAttenuation="0.000000"/>
+				<Event Id="683676466" Name="Mus_Level1" ObjectPath="\Events\Default Work Unit\Music\Mus_Level1" MaxAttenuation="0.000000"/>
+				<Event Id="683676465" Name="Mus_Level2" ObjectPath="\Events\Default Work Unit\Music\Mus_Level2" MaxAttenuation="0.000000"/>
+				<Event Id="683676464" Name="Mus_Level3" ObjectPath="\Events\Default Work Unit\Music\Mus_Level3" MaxAttenuation="0.000000"/>
 				<Event Id="3149643052" Name="Mus_Menu" ObjectPath="\Events\Default Work Unit\Music\Mus_Menu"/>
+				<Event Id="804414033" Name="Mus_Win" ObjectPath="\Events\Default Work Unit\Music\Mus_Win" MaxAttenuation="0.000000"/>
 				<Event Id="3048554965" Name="Pigeon_Chatter_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Chatter_01" MaxAttenuation="20.000000"/>
 				<Event Id="120299665" Name="Pigeon_Fly_01" ObjectPath="\Events\Default Work Unit\Amb\Pigeon_Fly_01" MaxAttenuation="20.000000"/>
 				<Event Id="130275037" Name="Platform_Loop_01" ObjectPath="\Events\Default Work Unit\Amb\Platform_Loop_01" MaxAttenuation="20.000000"/>
@@ -34,8 +36,6 @@
 				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Default Work Unit\UI\UI_Hover"/>
 				<Event Id="2774129122" Name="UI_Select" ObjectPath="\Events\Default Work Unit\UI\UI_Select"/>
 				<Event Id="1235916320" Name="Wire_Back" ObjectPath="\Events\Default Work Unit\Wire\Wire_Back"/>
-				<Event Id="35786028" Name="Wire_Rewind" ObjectPath="\Events\Default Work Unit\Wire\Wire_Rewind"/>
-				<Event Id="3605757084" Name="Wire_Stretch" ObjectPath="\Events\Default Work Unit\Wire\Wire_Stretch"/>
 				<Event Id="3051451975" Name="Wire_Stuck" ObjectPath="\Events\Default Work Unit\Wire\Wire_Stuck"/>
 				<Event Id="2605487452" Name="Wire_Take" ObjectPath="\Events\Default Work Unit\Wire\Wire_Take"/>
 			</IncludedEvents>
@@ -64,6 +64,10 @@
 					<ShortName>UI_Cancel_01.wav</ShortName>
 					<Path>SFX\UI_Cancel_01_9E69E797.wem</Path>
 				</File>
+				<File Id="136730817" Language="SFX">
+					<ShortName>Wire_Stretch_02.wav</ShortName>
+					<Path>SFX\Wire_Stretch_02_9E69E797.wem</Path>
+				</File>
 				<File Id="143446871" Language="SFX">
 					<ShortName>Platform_Loop_01.wav</ShortName>
 					<Path>SFX\Platform_Loop_01_4B8CC0C5.wem</Path>
@@ -84,6 +88,10 @@
 					<ShortName>Power_Loop_01.wav</ShortName>
 					<Path>SFX\Power_Loop_01_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="178118030" Language="SFX">
+					<ShortName>Denis_Electric_01.wav</ShortName>
+					<Path>SFX\Denis_Electric_01_9F927E3E.wem</Path>
+				</File>
 				<File Id="191626305" Language="SFX">
 					<ShortName>Wire_Rewind_01.wav</ShortName>
 					<Path>SFX\Wire_Rewind_01_9E69E797.wem</Path>
@@ -91,6 +99,10 @@
 				<File Id="231671138" Language="SFX">
 					<ShortName>Denis_Walk_Metal_02.wav</ShortName>
 					<Path>SFX\Denis_Walk_Metal_02_4B2492BA.wem</Path>
+				</File>
+				<File Id="260868588" Language="SFX">
+					<ShortName>Wire_Rewind_03.wav</ShortName>
+					<Path>SFX\Wire_Rewind_03_9E69E797.wem</Path>
 				</File>
 				<File Id="264163263" Language="SFX">
 					<ShortName>Wire_Stuck_04.wav</ShortName>
@@ -132,13 +144,17 @@
 					<ShortName>Light_Connected_08.wav</ShortName>
 					<Path>SFX\Light_Connected_08_9E69E797.wem</Path>
 				</File>
+				<File Id="479388794" Language="SFX">
+					<ShortName>Wire_Stretch_03.wav</ShortName>
+					<Path>SFX\Wire_Stretch_03_9E69E797.wem</Path>
+				</File>
 				<File Id="480867462" Language="SFX">
 					<ShortName>Light_Connected_03.wav</ShortName>
 					<Path>SFX\Light_Connected_03_9E69E797.wem</Path>
 				</File>
-				<File Id="508620858" Language="SFX">
+				<File Id="484648762" Language="SFX">
 					<ShortName>Wire_Back_01.wav</ShortName>
-					<Path>SFX\Wire_Back_01_9E69E797.wem</Path>
+					<Path>SFX\Wire_Back_01_22A0211D.wem</Path>
 				</File>
 				<File Id="547092713" Language="SFX">
 					<ShortName>Denis_Walk_Metal_03.wav</ShortName>
@@ -160,6 +176,10 @@
 					<ShortName>Pigeon_Fly_01.wav</ShortName>
 					<Path>SFX\Pigeon_Fly_01_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="608560371" Language="SFX">
+					<ShortName>Wire_Rewind_04.wav</ShortName>
+					<Path>SFX\Wire_Rewind_04_9E69E797.wem</Path>
+				</File>
 				<File Id="615221613" Language="SFX">
 					<ShortName>UI_Hover_01.wav</ShortName>
 					<Path>SFX\UI_Hover_01_9E69E797.wem</Path>
@@ -171,6 +191,10 @@
 				<File Id="673302247" Language="SFX">
 					<ShortName>Mus_Menu_01.wav</ShortName>
 					<Path>SFX\Mus_Menu_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="703836178" Language="SFX">
+					<ShortName>Wire_Rewind_02.wav</ShortName>
+					<Path>SFX\Wire_Rewind_02_9E69E797.wem</Path>
 				</File>
 				<File Id="731408071" Language="SFX">
 					<ShortName>Mus_Level_01.wav</ShortName>

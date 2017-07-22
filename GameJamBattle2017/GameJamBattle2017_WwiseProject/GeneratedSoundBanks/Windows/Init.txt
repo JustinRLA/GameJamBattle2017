@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2108779966	Walk			\Default Work Unit\Walk	
 	3568306760	Wire_State			\Default Work Unit\Wire_State	
+	3991942870	Music			\Default Work Unit\Music	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Walk			
@@ -8,8 +9,15 @@ State	ID	Name	State Group			Notes
 	2473969246	Metal	Walk			
 	748895195	None	Wire_State			
 	930712164	Off	Wire_State			
-	1559875400	Back	Wire_State			
+	1673109572	Rewind	Wire_State			
 	3238454324	Stretch	Wire_State			
+	748895195	None	Music			
+	979765101	Win	Music			
+	987635873	Level_01	Music			
+	987635874	Level_02	Music			
+	987635875	Level_03	Music			
+	2607556080	Menu	Music			
+	4158285989	GameOver	Music			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	

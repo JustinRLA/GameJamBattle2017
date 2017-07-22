@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8C50C284-B24C-4CD1-A240-1598B80F3E04}" SchemaVersion="75">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{8C50C284-B24C-4CD1-A240-1598B80F3E04}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8C50C284-B24C-4CD1-A240-1598B80F3E04}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Wire_Lenght" ID="{A41027F7-28A7-4306-B342-423510811901}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -148,14 +148,12 @@ using UnityEngine.SceneManagement;
             //Cable retract slowly sound
             if (isHoldingCable && !stretched)
             {
-            //AkSoundEngine.PostEvent("Wire_Back", gameObject);
             AkSoundEngine.SetState("Wire_State", "Rewind");
         }
             //Stretch sound
             else if (isHoldingCable && stretched)
             {
             AkSoundEngine.SetState("Wire_State", "Stretch");
-            //AkSoundEngine.PostEvent("Wire_Stretch", gameObject);
         }
 
             //If the player is stretching the cable...
@@ -187,7 +185,7 @@ using UnityEngine.SceneManagement;
         {
             // Release the cable
             //Debug.Log("Releasing Cable");
-            AkSoundEngine.PostEvent("Back", gameObject);
+            AkSoundEngine.PostEvent("Wire_Back", gameObject);
             AkSoundEngine.SetState("Wire_State", "Off");
             animator.SetTrigger("Startled");
             cableObject.GetComponent<Wire>().IsHeld = false;

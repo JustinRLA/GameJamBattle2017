@@ -18,6 +18,17 @@
 						<State Name="Off" ID="{CC811C68-C00E-45C0-926E-CAEC152EF9A2}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Music" ID="{2129BACC-9471-4202-B715-45AB490D2023}">
+					<ChildrenList>
+						<State Name="None" ID="{C2240B2B-07BB-4F5A-8569-8AD17B6F1088}"/>
+						<State Name="Menu" ID="{19E2877B-F044-448C-9F0B-941074AF518F}"/>
+						<State Name="Level_01" ID="{A1E7866D-6F80-475D-8E57-6B5E694D2E6E}"/>
+						<State Name="Level_02" ID="{2644508E-96DE-43A1-BB95-F50D4B5D750C}"/>
+						<State Name="Level_03" ID="{2F0758FA-ECB5-459A-A740-71C9BFD1C586}"/>
+						<State Name="GameOver" ID="{251B8190-194A-4FD8-B035-A7E5204A05A7}"/>
+						<State Name="Win" ID="{690C71E7-F760-40F4-8A63-BCEC98317D89}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

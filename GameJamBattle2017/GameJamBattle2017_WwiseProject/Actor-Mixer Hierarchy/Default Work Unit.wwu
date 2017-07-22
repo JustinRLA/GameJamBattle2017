@@ -82,75 +82,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Denis_Jump" ID="{E0310689-3B1F-4E7C-B4A7-79E25E8F49C6}" ShortID="151180248">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Denis_Jump_01" ID="{C0447AA4-2301-4FA7-B27B-7F231DDA272D}" ShortID="419736224" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Denis_Jump_01" ID="{25BCA55E-ACCD-4DA7-A9E3-D1E4697EA565}" ShortID="869380000">
-											<Language>SFX</Language>
-											<AudioFile>Denis_Jump_01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Denis_Jump_01" ID="{25BCA55E-ACCD-4DA7-A9E3-D1E4697EA565}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Denis_Jump_02" ID="{D4717B37-F4F5-4411-B3A7-D815AA8251B4}" ShortID="299465087" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Denis_Jump_02" ID="{A9D8BD7D-97CF-47C3-AC47-07243B955E12}" ShortID="295595108">
-											<Language>SFX</Language>
-											<AudioFile>Denis_Jump_02.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Denis_Jump_02" ID="{A9D8BD7D-97CF-47C3-AC47-07243B955E12}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Denis_Jump_03" ID="{9A2D0B82-528C-467F-81C2-27CFFA408273}" ShortID="338465003" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Denis_Jump_03" ID="{65C54F2B-CB5C-4C42-A0AE-8AC83116D20D}" ShortID="370157125">
-											<Language>SFX</Language>
-											<AudioFile>Denis_Jump_03.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Denis_Jump_03" ID="{65C54F2B-CB5C-4C42-A0AE-8AC83116D20D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<Sound Name="Denis_Electric_01" ID="{96E716CC-A422-49E5-AABB-2DE427982693}" ShortID="309681565" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -532,6 +463,24 @@
 									</GroupingInfo>
 								</SwitchContainer>
 								<SwitchContainer Name="Denis_Foley" ID="{3B7D2565-874C-42EA-88C3-B9906AFB4E79}" ShortID="497248338">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
@@ -542,6 +491,25 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Wire_Stretch" ID="{6EF0E1B5-1DA0-49EA-BE26-B7FB035543D2}" ShortID="684468534">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
@@ -550,8 +518,110 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Wire_Stretch_01" ID="{901BCF34-4D20-4B4B-BE76-83085D1110AA}" ShortID="347124509" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Stretch_01" ID="{4DFF6755-DC1D-4B99-9C36-41DC2D2CC48C}" ShortID="145877486">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Stretch_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="306951959"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Stretch_01" ID="{4DFF6755-DC1D-4B99-9C36-41DC2D2CC48C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Stretch_02" ID="{E619BBDD-6198-405E-80B2-5A3F1DE5994E}" ShortID="786981749" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Stretch_02" ID="{920056BF-9888-4A78-9CEC-890F2D779137}" ShortID="136730817">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Stretch_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Stretch_02" ID="{920056BF-9888-4A78-9CEC-890F2D779137}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Stretch_03" ID="{526AD8E5-1C95-4276-A62F-06D3A8BCADF0}" ShortID="934059390" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Stretch_03" ID="{74637A0B-BB55-446B-9FF5-BDEA3D131A59}" ShortID="479388794">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Stretch_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Stretch_03" ID="{74637A0B-BB55-446B-9FF5-BDEA3D131A59}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Wire_Rewind" ID="{2BFEDF34-88F1-44A3-811C-9FD3E19FA909}" ShortID="216541799">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
@@ -560,6 +630,115 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Wire_Rewind_01" ID="{973C97D4-1E49-4B8C-A229-7DC4D1188A03}" ShortID="396916173" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Rewind_01" ID="{1B1A9385-087C-47EA-A0F4-34F2D91A88E2}" ShortID="644876432">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Rewind_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="191626305"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Rewind_01" ID="{1B1A9385-087C-47EA-A0F4-34F2D91A88E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Rewind_02" ID="{E5FB5FA7-5C7D-4642-AFF9-54DD265217D3}" ShortID="829721441" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Rewind_02" ID="{967E16F7-EEC4-49CE-AA16-1CF3550A68D5}" ShortID="703836178">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Rewind_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Rewind_02" ID="{967E16F7-EEC4-49CE-AA16-1CF3550A68D5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Rewind_03" ID="{C451F92F-80FD-490D-8A80-0BF502F9183B}" ShortID="610519847" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Rewind_03" ID="{79FB2966-FEAB-46B2-8C5A-EFCD057BD6B4}" ShortID="260868588">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Rewind_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Rewind_03" ID="{79FB2966-FEAB-46B2-8C5A-EFCD057BD6B4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Rewind_04" ID="{F4715F0A-916F-4B50-A9E3-8DFA61EA6AAA}" ShortID="984631435" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Rewind_04" ID="{6F149C50-1C66-4916-BEA1-40AEA4CE0085}" ShortID="608560371">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Rewind_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Rewind_04" ID="{6F149C50-1C66-4916-BEA1-40AEA4CE0085}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Wire_Off" ID="{DA95EAB3-985C-42D5-B2E1-C6EE7F28FF9E}" ShortID="729715276">
 											<ReferenceList>
@@ -610,6 +789,589 @@
 								</SwitchContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<BlendContainer Name="Denis_Jump" ID="{1A458E2D-67DB-4C3B-88A3-7904AFFAC505}" ShortID="803613100">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Denis_Foley" ID="{F3A81D98-8BAD-466B-9FB6-3159947FBD63}" ShortID="342395044">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Wire_Stretch" ID="{E55022C8-AC6A-4564-878B-ECA415DEFF86}" ShortID="665878091">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{C74627AA-EA08-4A14-A468-683622D61468}" ShortID="815324088">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Wire_Lenght" ID="{A41027F7-28A7-4306-B342-423510811901}" WorkUnitID="{8C50C284-B24C-4CD1-A240-1598B80F3E04}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{0C3231D0-906A-43A9-B113-EF69039D15B9}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>25</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8B5EF045-3AAD-4674-B5EF-46A2053AC001}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="150"/>
+																	<Property Name="Min" Type="Real64" Value="-150"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{7FB9CBDA-F762-46CB-9268-97D29A15805A}" ShortID="137291282">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Wire_Lenght" ID="{A41027F7-28A7-4306-B342-423510811901}" WorkUnitID="{8C50C284-B24C-4CD1-A240-1598B80F3E04}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{12620A7B-E0AB-4721-B07E-9D4FA99F278D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>55</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>InvertedSCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>1600</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Wire_Stretch_01" ID="{424EC82A-F26A-49B8-A586-A0653582F5FC}" ShortID="563901440" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Stretch_01" ID="{D27ED365-1503-4BE7-B02F-AF65D915D64F}" ShortID="371502069">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Stretch_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="306951959"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Stretch_01" ID="{D27ED365-1503-4BE7-B02F-AF65D915D64F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Stretch_02" ID="{F72371A5-B7CB-4134-B6B7-5FA7974540B8}" ShortID="138796263" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Stretch_02" ID="{78FCA86C-DAA9-4798-8BCD-BA053D98C4ED}" ShortID="695379564">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Stretch_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="136730817"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Stretch_02" ID="{78FCA86C-DAA9-4798-8BCD-BA053D98C4ED}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Stretch_03" ID="{6165A9BE-E386-4B81-89F8-3BA13CAC5AC8}" ShortID="775455938" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Stretch_03" ID="{178E4B8E-9521-43E4-B9C4-2F34081D65B1}" ShortID="814523">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Stretch_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="479388794"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Stretch_03" ID="{178E4B8E-9521-43E4-B9C4-2F34081D65B1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Wire_Rewind" ID="{F149F9B3-B6F4-44FA-B05E-5C9EBDB97BDA}" ShortID="887348262">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{86071378-2487-4D94-A2C5-86FBD51AD116}" ShortID="358942216">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Wire_Lenght" ID="{A41027F7-28A7-4306-B342-423510811901}" WorkUnitID="{8C50C284-B24C-4CD1-A240-1598B80F3E04}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{00A1B057-3DE5-4F44-8C1E-F28031612093}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>29</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>1</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-600</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1E4C7E02-E32F-40E3-98DC-41795E6A7754}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="150"/>
+																	<Property Name="Min" Type="Real64" Value="-150"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{9355E486-27EC-49C1-853E-2C391A6EEB55}" ShortID="965659713">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Wire_Lenght" ID="{A41027F7-28A7-4306-B342-423510811901}" WorkUnitID="{8C50C284-B24C-4CD1-A240-1598B80F3E04}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{134E7CD8-9C1C-4099-9A42-BC8F5CC6977F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>54.5325779036827</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>1500</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Wire_Rewind_01" ID="{BC3E35F8-F418-4AFF-A04E-0D6A397B26A5}" ShortID="422383793" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Rewind_01" ID="{E3A4454C-C39C-4503-81FC-6CA70798A86A}" ShortID="454840130">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Rewind_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="191626305"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Rewind_01" ID="{E3A4454C-C39C-4503-81FC-6CA70798A86A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Rewind_02" ID="{F1F3A6A5-C92E-4A20-B5F9-543942D4FAD7}" ShortID="78406469" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Rewind_02" ID="{E04ACC4A-16C4-4A78-BABB-66ADA4E55A63}" ShortID="595536353">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Rewind_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="703836178"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Rewind_02" ID="{E04ACC4A-16C4-4A78-BABB-66ADA4E55A63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Rewind_03" ID="{4756561B-3A0B-42DF-92AA-EDB74BEA6D67}" ShortID="950477936" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Rewind_03" ID="{57686FB1-ED25-4183-87D6-CF6778639367}" ShortID="836930888">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Rewind_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="260868588"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Rewind_03" ID="{57686FB1-ED25-4183-87D6-CF6778639367}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wire_Rewind_04" ID="{050A3E53-4A20-47A8-B4F6-162837340A76}" ShortID="963874185" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wire_Rewind_04" ID="{158DE976-404F-427D-895F-218BA1457AFF}" ShortID="554721361">
+															<Language>SFX</Language>
+															<AudioFile>Wire_Rewind_04.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="608560371"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wire_Rewind_04" ID="{158DE976-404F-427D-895F-218BA1457AFF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Wire_Off" ID="{7E17B9DF-B900-4A48-A6E0-FF9C74C04B1B}" ShortID="839351873">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupRef Name="Wire_State" ID="{09F772B3-34A6-4CA8-98B9-95ECF8330C63}"/>
+										<DefaultSwitchRef Name="Off" ID="{CC811C68-C00E-45C0-926E-CAEC152EF9A2}"/>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Wire_Rewind" ID="{F149F9B3-B6F4-44FA-B05E-5C9EBDB97BDA}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Wire_Stretch" ID="{E55022C8-AC6A-4564-878B-ECA415DEFF86}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Wire_Off" ID="{7E17B9DF-B900-4A48-A6E0-FF9C74C04B1B}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Stretch" ID="{4C3CCD25-5F27-4EA2-AFBB-F2C2B6AEF904}"/>
+												<ItemList>
+													<ItemRef Name="Wire_Stretch" ID="{E55022C8-AC6A-4564-878B-ECA415DEFF86}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Off" ID="{CC811C68-C00E-45C0-926E-CAEC152EF9A2}"/>
+												<ItemList>
+													<ItemRef Name="Wire_Off" ID="{7E17B9DF-B900-4A48-A6E0-FF9C74C04B1B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Rewind" ID="{2F95CE94-973B-4019-BB8B-E0B4F6C74BE8}"/>
+												<ItemList>
+													<ItemRef Name="Wire_Rewind" ID="{F149F9B3-B6F4-44FA-B05E-5C9EBDB97BDA}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<RandomSequenceContainer Name="Denis_Jump" ID="{E0310689-3B1F-4E7C-B4A7-79E25E8F49C6}" ShortID="151180248">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Denis_Jump_01" ID="{C0447AA4-2301-4FA7-B27B-7F231DDA272D}" ShortID="419736224" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Denis_Jump_01" ID="{25BCA55E-ACCD-4DA7-A9E3-D1E4697EA565}" ShortID="869380000">
+													<Language>SFX</Language>
+													<AudioFile>Denis_Jump_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Denis_Jump_01" ID="{25BCA55E-ACCD-4DA7-A9E3-D1E4697EA565}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Denis_Jump_02" ID="{D4717B37-F4F5-4411-B3A7-D815AA8251B4}" ShortID="299465087" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Denis_Jump_02" ID="{A9D8BD7D-97CF-47C3-AC47-07243B955E12}" ShortID="295595108">
+													<Language>SFX</Language>
+													<AudioFile>Denis_Jump_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Denis_Jump_02" ID="{A9D8BD7D-97CF-47C3-AC47-07243B955E12}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Denis_Jump_03" ID="{9A2D0B82-528C-467F-81C2-27CFFA408273}" ShortID="338465003" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Denis_Jump_03" ID="{65C54F2B-CB5C-4C42-A0AE-8AC83116D20D}" ShortID="370157125">
+													<Language>SFX</Language>
+													<AudioFile>Denis_Jump_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Denis_Jump_03" ID="{65C54F2B-CB5C-4C42-A0AE-8AC83116D20D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Wire" ID="{10C076E1-6B05-4820-87FA-801B240DCE61}" ShortID="788799257">
@@ -639,104 +1401,6 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Wire_Take_01" ID="{1249EF46-9F37-4EDE-A30D-5155AC79CA80}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wire_Back_01" ID="{CA3343AD-C756-4E36-9DFC-6F97A0DF721F}" ShortID="993088488" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wire_Back_01" ID="{C0F49695-1EF9-4C0B-96E1-789DBBB1BBF2}" ShortID="508620858">
-									<Language>SFX</Language>
-									<AudioFile>Wire_Back_01.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wire_Back_01" ID="{C0F49695-1EF9-4C0B-96E1-789DBBB1BBF2}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wire_Rewind_01" ID="{A2BB7D50-17E1-41A9-B89E-27F50584820D}" ShortID="15227102" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wire_Rewind_01" ID="{0EF16FCC-C3EC-4D82-B59C-E3BB3F26C247}" ShortID="191626305">
-									<Language>SFX</Language>
-									<AudioFile>Wire_Rewind_01.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wire_Rewind_01" ID="{0EF16FCC-C3EC-4D82-B59C-E3BB3F26C247}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wire_Stretch_01" ID="{F7FB8D62-D8BB-449D-920F-BE9064F29D1F}" ShortID="39059750" Type="SoundFX">
-							<PropertyList>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wire_Stretch_01" ID="{A24279F2-1834-44F5-B092-36C0CE50364A}" ShortID="306951959">
-									<Language>SFX</Language>
-									<AudioFile>Wire_Stretch_01.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wire_Stretch_01" ID="{A24279F2-1834-44F5-B092-36C0CE50364A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="Wire_Stuck" ID="{0239CAB7-6645-4617-BBDF-8E9E303C5F4A}" ShortID="842521392">
@@ -1048,6 +1712,58 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="Wire_Back_01" ID="{560814B1-17C6-4C38-B0E6-5667D158A7C4}" ShortID="1060686481" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wire_Back_01" ID="{B38B1FC2-253B-4DE3-8D39-E021B5107247}" ShortID="484648762">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="0.810945517220341"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Wire_Back_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wire_Back_01" ID="{B38B1FC2-253B-4DE3-8D39-E021B5107247}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Denis_Drop" ID="{8D782830-55D7-40CF-9277-6E20929860EC}" ShortID="859307953" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AB41804F-F68D-49CC-942A-DA51E22A3D8E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E8414EFE-46B4-4579-9202-D8668E7A9DF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Denis_Electric_01" ID="{EE614FA1-931D-4866-8276-69122960C85A}" ShortID="178118030">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="3.72429913669504E-02"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.133692789522386"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Denis_Electric_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Denis_Electric_01" ID="{EE614FA1-931D-4866-8276-69122960C85A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Amb" ID="{1597E154-D7E9-4959-81E0-6AF1B0B0E4CA}" ShortID="551694565">
